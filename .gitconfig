@@ -1,11 +1,11 @@
 [user]
-	gerrit = Lencioni
-	email = joe.lencioni@causes.com
-	name = Joe Lencioni
+  gerrit = Lencioni
+  email = joe.lencioni@causes.com
+  name = Joe Lencioni
 [log]
-    decorate = short
+  decorate = short
 [color]
-    ui = auto
+  ui = auto
 [pager]
   status = true
   show-branch = true
