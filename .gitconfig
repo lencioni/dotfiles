@@ -26,6 +26,7 @@
 
 [core]
   excludesfile = ~/.gitignore
+  editor = vim
   # global gitignore, useful for hiding editor files
 
 [help]
