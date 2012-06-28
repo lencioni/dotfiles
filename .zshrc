@@ -17,3 +17,9 @@ plugins=(git brew gem knife rails ruby)
 source $ZSH/oh-my-zsh.sh
 
 alias restart_unicorn="kill -USR2 \`cat ~/causes/tmp/pids/unicorn.pid\`"
+
+# Add rbenv to the path and initialize it
+if [ -d $HOME/.rbenv/bin ] ; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
