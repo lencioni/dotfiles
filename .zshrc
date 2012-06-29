@@ -1,7 +1,7 @@
 # The following lines were added by compinstall
 
 setopt appendhistory autocd beep extendedglob nomatch
-
+setopt nonomatch # unmatched patterns are left unchanged
 
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/joe/.zshrc'
