@@ -1,2 +1,4 @@
 --type-add=ruby=.haml
 --type-set=scss=.scss
+
+--ignore-dir=coverage
