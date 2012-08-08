@@ -1,0 +1,27 @@
+[submodule "bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vimrails"]
+	path = .vim/bundle/vimrails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/matchit"]
+	path = .vim/bundle/matchit
+	url = git://github.com/wzzrd/vim-matchit.git
+[submodule "bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/gist"]
+	path = .vim/bundle/gist
+	url = git://github.com/vim-scripts/Gist.vim.git
+[submodule "bundle/ack"]
+	path = .vim/bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/surround"]
+	path = .vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/commentary"]
+	path = .vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
