@@ -2,3 +2,4 @@
 --type-set=scss=.scss
 
 --ignore-dir=coverage
+--ignore-dir=vendor
