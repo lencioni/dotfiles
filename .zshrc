@@ -16,7 +16,8 @@ export DISABLE_AUTO_UPDATE="true"
 plugins=(git brew gem knife rails ruby)
 source $ZSH/oh-my-zsh.sh
 
-alias restart_unicorn="kill -USR2 \`cat ~/causes/tmp/pids/unicorn.pid\`"
+alias restart_causes="kill -USR2 \`cat /var/run/philotic/pids/unicorn_causes.pid\`"
+alias restart_wishes="kill -USR2 \`cat /var/run/philotic/pids/unicorn_wishes.pid\`"
 
 # Add rbenv to the path and initialize it
 if [ -d $HOME/.rbenv/bin ] ; then
