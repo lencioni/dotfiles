@@ -27,3 +27,22 @@ endif
 " pathogen stuff
 call pathogen#runtime_append_all_bundles()  " add .vim/bundle subdirs to runtime path
 call pathogen#helptags()                    " wasteful, but no shortage of grunt available
+
+" ack
+set grepprg=ack\ --column
+set grepformat=%f:%l:%c:%m
+autocmd QuickFixCmdPost [^l]* nested cw
+autocmd QuickFixCmdPost l* nested lw
+
+function! AckGrep(command)
+  cexpr system("ack --column " . a:command)
+  cw
+endfunction
+
+function! LackGrep(command)
+  lexpr system("ack --column " . a:command)
+  lw
+endfunction
+
+command! -nargs=+ -complete=file Ack call AckGrep(<q-args>)
+nnoremap <leader>a :Ack<space>
