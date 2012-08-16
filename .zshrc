@@ -21,6 +21,6 @@ alias restart_wishes="kill -USR2 \`cat /var/run/philotic/pids/unicorn_wishes.pid
 
 # Add rbenv to the path and initialize it
 if [ -d $HOME/.rbenv/bin ] ; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
+  export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
