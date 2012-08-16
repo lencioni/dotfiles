@@ -87,3 +87,6 @@ if &term =~ "screen" || &term =~ "xterm"
   let g:CommandTSelectNextMap = ['<C-j>', '<ESC>OB']
   let g:CommandTSelectPrevMap = ['<C-k>', '<ESC>OA']
 endif
+
+" Convert hashrockets to Ruby 1.9
+nmap <leader>rh :%s/\v:(\w+)(\s*)\=\>/\1:\2/gc<cr>
