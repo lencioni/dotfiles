@@ -25,6 +25,31 @@ if has('mouse')
   set mouse=a
 endif
 
+" Ruby
+autocmd FileType ruby set shiftwidth=2 | set smartindent | set tabstop=2
+
+" C
+autocmd FileType c set shiftwidth=4 | set tabstop=4
+
+" Objective-C
+let filetype_m='objc'
+autocmd FileType objc set shiftwidth=4 | set tabstop=4
+
+" Prolog
+let filetype_pl='prolog'
+autocmd FileType prolog set shiftwidth=2 | set tabstop=2
+
+" RSpec
+autocmd BufNewFile,BufRead *_spec.rb set ft=ruby.spec
+
+" Jasmine
+autocmd BufNewFile,BufRead *_spec.js set ft=javascript.jasmine
+
+" automatic, language-dependent indentation, syntax coloring and other
+" functionality
+filetype indent plugin on
+syntax on
+
 " pathogen stuff
 call pathogen#runtime_append_all_bundles()  " add .vim/bundle subdirs to runtime path
 call pathogen#helptags()                    " wasteful, but no shortage of grunt available
