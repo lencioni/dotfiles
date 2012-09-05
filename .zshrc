@@ -16,9 +16,4 @@ export DISABLE_AUTO_UPDATE="true"
 plugins=(git brew gem knife rails ruby)
 source $ZSH/oh-my-zsh.sh
 
-
-# Add rbenv to the path and initialize it
-if [ -d $HOME/.rbenv/bin ] ; then
-  export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
+source $HOME/.shells/path
