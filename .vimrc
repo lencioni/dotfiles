@@ -2,6 +2,7 @@ set backspace=indent,start,eol        " allow unrestricted backspacing in insert
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set hidden                            " keep undo when changing buffers
 
 " Keep indentation when starting new lines
 set autoindent
