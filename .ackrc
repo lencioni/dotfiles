@@ -2,4 +2,7 @@
 --type-set=scss=.scss
 
 --ignore-dir=coverage
+--ignore-dir=fixtures
+--ignore-dir=log
+--ignore-dir=tmp
 --ignore-dir=vendor
