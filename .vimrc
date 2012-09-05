@@ -3,6 +3,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set hidden                            " keep undo when changing buffers
+set wildignore+=*.o,.git,tmp,log      " patterns to ignore during file-navigation
 
 " Keep indentation when starting new lines
 set autoindent
