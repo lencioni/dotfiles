@@ -124,3 +124,8 @@
   ten = log --oneline --graph -10
 
   ridof = !sh -c 'wc -l $1 && git rm $1' -
+
+  refresh = !ssh-add -l && STASH=$(git stash) && git fetch && git rebase origin/master && test \"$STASH\" != \"No local changes to save\" && git stash pop
+
+  # requires Git 1.7.11.3 or later
+  reword = commit --amend --only --
