@@ -6,3 +6,6 @@
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor
+
+--type-set=ignored=.sql
+--noignored
