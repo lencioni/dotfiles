@@ -96,3 +96,9 @@ nmap <leader>rh :%s/\v:(\w+)(\s*)\=\>\s?/\1:\2/gc<cr>
 colorscheme solarized
 set background=dark
 set t_Co=16
+
+" Powerline
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+let g:Powerline_symbols = 'fancy'
