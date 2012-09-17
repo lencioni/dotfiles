@@ -91,3 +91,8 @@ endif
 
 " Convert hashrockets to Ruby 1.9
 nmap <leader>rh :%s/\v:(\w+)(\s*)\=\>\s?/\1:\2/gc<cr>
+
+" Solarized
+colorscheme solarized
+set background=dark
+set t_Co=16
