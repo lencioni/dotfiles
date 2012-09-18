@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/delimitMate"]
 	path = .vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
+[submodule "tmux/solarized"]
+	path = tmux/solarized
+	url = git://github.com/seebi/tmux-colors-solarized.git
