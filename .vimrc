@@ -1,15 +1,14 @@
+set autoindent                        " keep indentation when starting new lines
 set backspace=indent,start,eol        " allow unrestricted backspacing in insert mode
-set tabstop=2
-set shiftwidth=2
-set expandtab
+set expandtab                         " always use spaces instead of tabs
 set hidden                            " keep undo when changing buffers
+set hlsearch                          " highlight search strings
+set ignorecase                        " ignore case when searching"
+set nu                                " enable number lines
+set shiftwidth=2                      " spaces per tab (when shifting)
+set tabstop=2                         " spaces per tab
+set whichwrap=b,h,l,s,<,>,[,],~       " allow <BS>/h/l/<Left>/<Right>/<Space>, ~ to cross line boundaries"
 set wildignore+=*.o,.git,tmp,log      " patterns to ignore during file-navigation
-
-" Keep indentation when starting new lines
-set autoindent
-
-" Enable number lines
-set nu
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
