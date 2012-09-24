@@ -89,7 +89,7 @@ if &term =~ "screen" || &term =~ "xterm"
 endif
 
 " Convert hashrockets to Ruby 1.9
-nmap <leader>rh :%s/\v:(\w+)(\s*)\=\>\s?/\1:\2/gc<cr>
+nmap <leader>rh :%s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<cr>
 
 " Solarized
 colorscheme solarized
