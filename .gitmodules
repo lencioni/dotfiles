@@ -59,3 +59,6 @@
 [submodule "tmux/solarized"]
 	path = tmux/solarized
 	url = git://github.com/seebi/tmux-colors-solarized.git
+[submodule ".vim/bundle/haml"]
+	path = .vim/bundle/haml
+	url = git://github.com/tpope/vim-haml.git
