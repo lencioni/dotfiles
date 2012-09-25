@@ -90,6 +90,10 @@ if &term =~ "screen" || &term =~ "xterm"
   let g:CommandTSelectPrevMap = ['<C-k>', '<ESC>OA']
 endif
 
+" prevent Align.vim from defining a bunch of maps starting with <leader>t
+" and introducing an annoying delay when opening Command-T
+let g:loaded_AlignMapsPlugin = "v41"
+
 " Convert hashrockets to Ruby 1.9
 nmap <leader>rh :%s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<cr>
 
