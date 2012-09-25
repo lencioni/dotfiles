@@ -1,13 +1,15 @@
+set nocompatible                      " Disable vi-compatibility (must come before other options)
+
 set autoindent                        " keep indentation when starting new lines
 set backspace=indent,start,eol        " allow unrestricted backspacing in insert mode
 set expandtab                         " always use spaces instead of tabs
 set hidden                            " keep undo when changing buffers
 set hlsearch                          " highlight search strings
-set ignorecase                        " ignore case when searching"
+set ignorecase                        " ignore case when searching
 set nu                                " enable number lines
 set shiftwidth=2                      " spaces per tab (when shifting)
 set tabstop=2                         " spaces per tab
-set whichwrap=b,h,l,s,<,>,[,],~       " allow <BS>/h/l/<Left>/<Right>/<Space>, ~ to cross line boundaries"
+set whichwrap=b,h,l,s,<,>,[,],~       " allow <BS>/h/l/<Left>/<Right>/<Space>, ~ to cross line boundaries
 set wildignore+=*.o,.git,tmp,log      " patterns to ignore during file-navigation
 
 " Remove trailing whitespace on save
@@ -97,7 +99,6 @@ set background=dark
 set t_Co=16
 
 " Powerline
-set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
