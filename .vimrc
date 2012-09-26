@@ -17,6 +17,10 @@ set ignorecase " ignore case when searching
 set incsearch  " incremental search
 set smartcase  " ignore case when searching unless search string contains an uppercase character
 
+" Store temporary files in a central spot
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
