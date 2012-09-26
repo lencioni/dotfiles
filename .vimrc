@@ -5,6 +5,7 @@ set backspace=indent,start,eol   " allow unrestricted backspacing in insert mode
 set expandtab                    " always use spaces instead of tabs
 set hidden                       " keep undo when changing buffers
 set nu                           " enable number lines
+set scrolloff=3                  " maintain 3 lines of context around the cursor
 set shiftwidth=2                 " spaces per tab (when shifting)
 set tabstop=2                    " spaces per tab
 set visualbell                   " replace beeping with a visual bell
