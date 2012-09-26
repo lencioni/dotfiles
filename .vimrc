@@ -7,6 +7,7 @@ set hidden                       " keep undo when changing buffers
 set nu                           " enable number lines
 set shiftwidth=2                 " spaces per tab (when shifting)
 set tabstop=2                    " spaces per tab
+set visualbell                   " replace beeping with a visual bell
 set whichwrap=b,h,l,s,<,>,[,],~  " allow <BS>/h/l/<Left>/<Right>/<Space>, ~ to cross line boundaries
 set wildignore+=*.o,.git,tmp,log " patterns to ignore during file-navigation
 
