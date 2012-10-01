@@ -62,6 +62,6 @@
 [submodule ".vim/bundle/haml"]
 	path = .vim/bundle/haml
 	url = git://github.com/tpope/vim-haml.git
-[submodule ".vim/bundle/autocomplpop"]
-	path = .vim/bundle/autocomplpop
-	url = git://github.com/vim-scripts/AutoComplPop.git
+[submodule ".vim/bundle/neocomplcache"]
+	path = .vim/bundle/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.git
