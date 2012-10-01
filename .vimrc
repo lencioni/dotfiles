@@ -121,3 +121,4 @@ let g:Powerline_symbols = 'fancy'
 " Autocomplete
 inoremap <Nul> <C-n>                                     " ctrl+space opens
 inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>" " tab selects
+inoremap <expr> <Esc> pumvisible() ? "\<C-e>" : "\<Esc>" " esc closes
