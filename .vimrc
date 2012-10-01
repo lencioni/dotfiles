@@ -118,5 +118,6 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 let g:Powerline_symbols = 'fancy'
 
-" Map ctrl+space to autocomplete
-inoremap <Nul> <C-n>
+" Autocomplete
+inoremap <Nul> <C-n>                                     " ctrl+space opens
+inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>" " tab selects
