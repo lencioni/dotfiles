@@ -89,6 +89,16 @@ endfunction
 command! -nargs=+ -complete=file Ack call AckGrep(<q-args>)
 nnoremap <leader>a :Ack<space>
 
+" populate the :args list with the filenames currently in the quickfix window
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+  let buffer_numbers = {}
+  for quickfix_item in getqflist()
+    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+  endfor
+  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
+
 " Command-T
 let g:CommandTMatchWindowReverse   = 1
 let g:CommandTMaxHeight            = 10
