@@ -152,8 +152,6 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 inoremap <Nul> <C-n>
 " tab selects
 inoremap <expr> <TAB> pumvisible() ? neocomplcache#close_popup() : "\<TAB>"
-" enter does not select
-inoremap <expr> <CR> neocomplcache#cancel_popup() . "\<CR>"
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
