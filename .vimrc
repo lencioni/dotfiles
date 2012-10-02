@@ -23,6 +23,9 @@ set smartcase  " ignore case when searching unless search string contains an upp
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
