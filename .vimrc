@@ -138,10 +138,14 @@ let g:acp_enableAtStartup = 0
 let g:neocomplcache_enable_at_startup            = 1
 let g:neocomplcache_enable_smart_case            = 1
 let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_fuzzy_completion      = 1
 let g:neocomplcache_enable_underbar_completion   = 1
 " Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+let g:neocomplcache_auto_completion_start_length = 2
+let g:neocomplcache_min_syntax_length            = 3
+" Set number of items in list (plugin adds 1 for some reason)
+let g:neocomplcache_max_list                     = 3
+let g:neocomplcache_lock_buffer_name_pattern     = '\*ku\*'
 " Highlighting first candidate.
 let g:neocomplcache_enable_auto_select = 1
 
