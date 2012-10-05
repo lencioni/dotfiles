@@ -26,11 +26,18 @@ ssh-ensure-agent () {
 alias be="bundle exec"
 alias bi="bundle install"
 alias berc="bundle exec rails console"
+alias bers="bundle exec rails server"
 
 alias g="git"
 alias gr="git refresh"
 alias gp="git patch"
 alias ga="git amend"
-alias fc="flow commit"
 alias gpg="git push gerrit"
 alias grc="git rebase --continue"
+alias gri="git rebase --interactive"
+alias gsu="git submodule update --init"
+
+
+alias f="flow"
+alias fc="flow commit"
+alias fs="flow start"
