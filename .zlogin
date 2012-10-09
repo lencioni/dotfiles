@@ -43,5 +43,5 @@ alias gsu="git submodule update --init"
 
 
 alias f="flow"
-alias fc="flow commit"
+alias fci="flow commit"
 alias fs="flow start"
