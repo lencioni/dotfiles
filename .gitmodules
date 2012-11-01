@@ -47,9 +47,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule ".vim/bundle/align"]
-	path = .vim/bundle/align
-	url = git://github.com/tsaleh/vim-align.git
 [submodule ".vim/bundle/endwise"]
 	path = .vim/bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
@@ -65,3 +62,6 @@
 [submodule ".vim/bundle/neocomplcache"]
 	path = .vim/bundle/neocomplcache
 	url = git://github.com/Shougo/neocomplcache.git
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
