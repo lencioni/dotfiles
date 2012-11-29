@@ -41,6 +41,7 @@ alias grc="git rebase --continue"
 alias gri="git rebase --interactive"
 alias gsu="git submodule update --init"
 
+alias scth="SKIP_CHECKS=test_history"
 
 alias f="flow"
 alias fci="flow commit"
