@@ -23,6 +23,9 @@ ssh-ensure-agent () {
   fi
 }
 
+alias sr="ssh-reagent"
+alias :q="exit"
+
 alias be="bundle exec"
 alias bi="bundle install"
 alias berc="bundle exec rails console"
