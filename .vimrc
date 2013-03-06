@@ -114,6 +114,10 @@ if &term =~ "screen" || &term =~ "xterm"
   let g:CommandTSelectPrevMap = ['<C-k>', '<ESC>OA']
 endif
 
+" Gitgutter
+nnoremap <Leader>gn :GitGutterNextHunk<CR>
+nnoremap <Leader>gp :GitGutterPrevHunk<CR>
+
 " prevent Align.vim from defining a bunch of maps starting with <leader>t
 " and introducing an annoying delay when opening Command-T
 let g:loaded_AlignMapsPlugin = "v41"
