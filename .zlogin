@@ -29,7 +29,7 @@ alias :q="exit"
 alias be="bundle exec"
 alias bi="bundle install"
 alias berc="bundle exec rails console"
-alias bers="bundle exec rails server"
+alias bers="bundle exec rails server | grep -v 'asset' | grep -v '^Cache' | sed '/^$/N;/^\n$/D'"
 
 alias g="git"
 alias gb="git branch"
