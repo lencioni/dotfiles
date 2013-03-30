@@ -68,3 +68,6 @@
 [submodule ".vim/bundle/gitgutter"]
 	path = .vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/bundle/expand-region"]
+	path = .vim/bundle/expand-region
+	url = git://github.com/terryma/vim-expand-region.git
