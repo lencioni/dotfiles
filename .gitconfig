@@ -129,3 +129,6 @@
 
   # requires Git 1.7.11.3 or later
   reword = commit --amend --only --
+
+[diff]
+  algorithm = patience
