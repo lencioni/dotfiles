@@ -1,7 +1,3 @@
-[submodule ".vim/bundle/gist"]
-	path = .vim/bundle/gist
-	url = git://github.com/vim-scripts/Gist.vim.git
-  ignore = dirty
 [submodule ".vim/bundle/ack"]
 	path = .vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
