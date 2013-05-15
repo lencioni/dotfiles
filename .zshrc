@@ -8,6 +8,12 @@ zstyle :compinstall filename '/home/joe/.zshrc'
 
 autoload -Uz compinit
 compinit
+
+# Load rbenv if available
+if which rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+fi
+
 # End of lines added by compinstall
 export ZSH_THEME="candy"
 
