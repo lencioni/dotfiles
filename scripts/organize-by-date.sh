@@ -4,13 +4,13 @@
 # and sorts them into subdirectories according to the date
 # Creates subdirectories corresponding to the dates as necessary.
 
-for file in $(find . -type f)
-do
-    datepath="$(stat -f %c $file | xargs -J @ date -r @ +'%Y/%m')"
-    if ! test -e "$datepath"; then
-        mkdir -pv "$datepath"
-    fi
+find . -type f -exec sh -c '
+  file="$0"
+  echo $file
+  datepath=`stat -f %c "$file" | xargs -J @ date -r @ +"%Y/%m"`
+  if ! test -e "$datepath"; then
+      mkdir -pv "$datepath"
+  fi
 
-    mv -v $file $datepath
-done
-
+  mv -v "$file" ./$datepath
+' {} ';'
