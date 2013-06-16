@@ -4,7 +4,7 @@
 # and sorts them into subdirectories according to the date
 # Creates subdirectories corresponding to the dates as necessary.
 
-for file in *
+for file in $(find . -type f)
 do
     datepath="$(stat -f %c $file | xargs -J @ date -r @ +'%Y/%m')"
     if ! test -e "$datepath"; then
