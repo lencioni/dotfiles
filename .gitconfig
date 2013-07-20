@@ -7,7 +7,6 @@
 [color]
   ui = auto
 [pager]
-  status = true
   show-branch = true
 
 [rebase]
