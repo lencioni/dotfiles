@@ -9,4 +9,5 @@
 --ignore-dir=vendor
 
 --type-set=ignored=.sql
+--color
 --noignored
