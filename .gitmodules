@@ -52,9 +52,6 @@
 [submodule ".vim/bundle/gitgutter"]
 	path = .vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-	url = git://github.com/Valloric/YouCompleteMe.git
 [submodule ".vim/bundle/vim-git"]
 	path = .vim/bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
