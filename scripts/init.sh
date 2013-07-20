@@ -1,6 +1,7 @@
 cd ~
 ln -s dotfiles/.ackrc .
-ln -s dotfiles/.gitconfig
+ln -s dotfiles/.gitconfig .
+ln -s dotfiles/.gitexcludes .
 ln -s dotfiles/.oh-my-zsh .
 ln -s dotfiles/.rdebugrc .
 ln -s dotfiles/.shells .

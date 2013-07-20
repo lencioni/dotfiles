@@ -25,7 +25,7 @@
   # see `man git-apply' for other options
 
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitexcludes
   editor = vim
   # global gitignore, useful for hiding editor files
 
