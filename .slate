@@ -5,21 +5,57 @@ config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
 
+# Monitor Aliases
+alias internal          1440x900
+alias external          2560x1600
+
+# App Aliases
+alias chrome            'Google Chrome':REPEAT_LAST
+alias propane           'Propane':IGNORE_FAIL,TITLE_ORDER_REGEX=Office,REPEAT_LAST
+alias term              'iTerm':REPEAT_LAST
+
+# Position Aliases
+alias full              move                    screenOriginX;screenOriginY screenSizeX;screenSizeY
+
+# halves
+alias top               push up                 bar-resize:screenSizeY/2
+alias right             push right              bar-resize:screenSizeX/2
+alias bottom            push down               bar-resize:screenSizeY/2
+alias left              push left               bar-resize:screenSizeX/2
+
+# thirds
+alias small-top         push up                 bar-resize:screenSizeY/3
+alias small-right       push right              bar-resize:screenSizeX/3
+alias small-bottom      push down               bar-resize:screenSizeY/3
+alias small-left        push left               bar-resize:screenSizeX/3
+
+# two thirds
+alias big-top           push up                 bar-resize:2*screenSizeY/3
+alias big-right         push right              bar-resize:2*screenSizeX/3
+alias big-bottom        push down               bar-resize:2*screenSizeY/3
+alias big-left          push left               bar-resize:2*screenSizeX/3
+
+# corners
+alias top-right         corner top-right        resize:screenSizeX/2;screenSizeY/2
+alias bottom-right      corner bottom-right     resize:screenSizeX/2;screenSizeY/2
+alias bottom-left       corner bottom-left      resize:screenSizeX/2;screenSizeY/2
+alias top-left          corner top-left         resize:screenSizeX/2;screenSizeY/2
+
+# centered
+alias small-center      move                    screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/3 screenSizeX/3;screenSizeY/3
+alias big-center        move                    screenOriginX+screenSizeX/4;screenOriginY+screenSizeY/4 screenSizeX/2;screenSizeY/2
+
 # Resize Bindings
-bind right:alt       resize +10% +0
-bind left:alt        resize -10% +0
-bind up:alt          resize +0   -10%
-bind down:alt        resize +0   +10%
 bind right:ctrl;alt  resize -10% +0 bottom-right
 bind left:ctrl;alt   resize +10% +0 bottom-right
 bind up:ctrl;alt     resize +0   +10% bottom-right
 bind down:ctrl;alt   resize +0   -10% bottom-right
 
 # Push Bindings
-bind right:ctrl;cmd  push right bar-resize:screenSizeX/3
-bind left:ctrl;cmd   push left  bar-resize:screenSizeX/3
-bind up:ctrl;cmd     push up    bar-resize:screenSizeY/2
-bind down:ctrl;cmd   push down  bar-resize:screenSizeY/2
+bind right:alt;cmd  push right bar-resize:screenSizeX/2
+bind left:alt;cmd   push left  bar-resize:screenSizeX/2
+bind up:alt;cmd     push up    bar-resize:screenSizeY
+bind down:alt;cmd   push down  bar-resize:screenSizeY/2
 
 # Nudge Bindings
 bind right:shift;alt nudge +10% +0
@@ -36,13 +72,22 @@ bind left:ctrl;alt;cmd  throw left  resize
 bind up:ctrl;alt;cmd    throw up    resize
 bind down:ctrl;alt;cmd  throw down  resize
 
-# Focus Bindings
-bind right:cmd    focus right
-bind left:cmd     focus left
-bind up:cmd       focus up
-bind down:cmd     focus down
-bind up:cmd;alt   focus behind
-bind down:cmd;alt focus behind
-
 # Window Hints
 bind esc:cmd hint
+
+# Layouts
+layout                  one-monitor             ${chrome}   ${full} ${internal}
+layout                  one-monitor             ${propane}  ${right} ${internal} | ${left} ${internal}
+layout                  one-monitor             ${term}     ${full} ${internal}
+
+layout                  two-monitors            ${chrome}   ${big-left} ${external}
+layout                  two-monitors            ${propane}  ${right} ${internal} | ${left} ${internal}
+layout                  two-monitors            ${term}     ${full} ${external}
+
+# for testing layouts
+bind f1:ctrl;alt;cmd layout one-monitor
+bind f2:ctrl;alt;cmd layout two-monitors
+
+# Autoswitching
+default                 one-monitor             resolutions:${internal}
+default                 two-monitors            resolutions:${internal};${external}
