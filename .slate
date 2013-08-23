@@ -11,7 +11,6 @@ alias external          2560x1600
 
 # App Aliases
 alias chrome            'Google Chrome':REPEAT_LAST
-alias propane           'Propane':IGNORE_FAIL,TITLE_ORDER_REGEX=Office,REPEAT_LAST
 alias term              'iTerm':REPEAT_LAST
 alias textual           'Textual'
 
@@ -78,12 +77,10 @@ bind esc:cmd hint
 
 # Layouts
 layout                  one-monitor             ${chrome}   ${full} ${internal}
-layout                  one-monitor             ${propane}  ${right} ${internal} | ${left} ${internal}
 layout                  one-monitor             ${term}     ${full} ${internal}
 layout                  one-monitor             ${textual}  ${full} ${internal}
 
 layout                  two-monitors            ${chrome}   ${big-left} ${external}
-layout                  two-monitors            ${propane}  ${right} ${internal} | ${left} ${internal}
 layout                  two-monitors            ${term}     ${full} ${external}
 layout                  two-monitors            ${textual}  ${full} ${internal}
 
