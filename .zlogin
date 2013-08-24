@@ -49,3 +49,7 @@ alias scth="SKIP_CHECKS=test_history"
 alias f="flow"
 alias fci="flow commit"
 alias fs="flow start"
+
+alias deploy="~/stark/stark_remote deploy"
+
+alias z="zeus"
