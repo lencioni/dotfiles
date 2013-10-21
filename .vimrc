@@ -138,3 +138,6 @@ let g:Powerline_symbols = 'fancy'
 " Autocorrect my common typos
 iab THis This
 iab THe The
+
+" Spellcheck commit messages
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
