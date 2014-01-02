@@ -135,5 +135,6 @@ let g:Powerline_symbols = 'fancy'
 iab THis This
 iab THe The
 
-" Spellcheck commit messages
-au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+" Spellcheck
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell " git commit messages
+au FileType markdown setlocal spell
