@@ -44,17 +44,6 @@ endif
 " Ruby
 autocmd FileType ruby set shiftwidth=2 | set smartindent | set tabstop=2
 
-" C
-autocmd FileType c set shiftwidth=4 | set tabstop=4
-
-" Objective-C
-let filetype_m='objc'
-autocmd FileType objc set shiftwidth=4 | set tabstop=4
-
-" Prolog
-let filetype_pl='prolog'
-autocmd FileType prolog set shiftwidth=2 | set tabstop=2
-
 " RSpec
 autocmd BufNewFile,BufRead *_spec.rb set ft=ruby.spec
 
