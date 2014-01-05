@@ -1,4 +1,12 @@
 "
+" Visual mode mappings
+"
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
+"
 " Normal mode mappings
 "
 
