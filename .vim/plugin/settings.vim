@@ -26,11 +26,6 @@ if exists('+colorcolumn')
   set colorcolumn=80
 endif
 
-" Allow clicking to move cursor
-if has('mouse')
-  set mouse=a
-endif
-
 " Solarized
 colorscheme solarized
 set background=dark
