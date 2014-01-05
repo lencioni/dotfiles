@@ -3,6 +3,7 @@
 "
 
 " Autocorrect my common typos
+iab SOme Some
 iab THat That
 iab THe The
 iab THere There
