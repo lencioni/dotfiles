@@ -14,6 +14,8 @@ if which rbenv > /dev/null; then
   eval "$(rbenv init -)"
 fi
 
+export EDITOR=vim
+
 # End of lines added by compinstall
 export ZSH_THEME="candy"
 
