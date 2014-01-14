@@ -14,3 +14,6 @@ vnoremap > >gv
 nnoremap <leader>rh :%s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<cr>
 
 nnoremap <leader>a :Ack<space>
+
+" Prevent Q from entering ex mode by mapping it to play the q macro
+nnoremap Q @q
