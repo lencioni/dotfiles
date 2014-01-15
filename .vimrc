@@ -1,3 +1,5 @@
+set nocompatible
+
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()                " add .vim/bundle subdirs to runtime path
 call pathogen#helptags()              " wasteful, but no shortage of grunt available
