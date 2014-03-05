@@ -17,3 +17,10 @@ nnoremap <leader>a :Ack<space>
 
 " Prevent Q from entering ex mode by mapping it to play the q macro
 nnoremap Q @q
+
+"
+" Insert mode mappings
+"
+
+" Easily escape from INSERT mode
+inoremap jj <Esc>
