@@ -18,6 +18,9 @@ nnoremap <leader>a :Ack<space>
 " Easy save
 nnoremap <Leader>w :w<CR>
 
+" Easy visual line mode
+nmap <Leader><Leader> V
+
 " Prevent Q from entering ex mode by mapping it to play the q macro
 nnoremap Q @q
 
