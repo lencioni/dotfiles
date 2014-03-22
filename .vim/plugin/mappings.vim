@@ -25,6 +25,10 @@ nnoremap <Leader>w :w<CR>
 " Easy visual line mode
 nmap <Leader><Leader> V
 
+" splitjoin
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
+
 " Prevent Q from entering ex mode by mapping it to play the q macro
 nnoremap Q @q
 
