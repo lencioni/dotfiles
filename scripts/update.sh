@@ -4,5 +4,6 @@ git submodule foreach git reset --hard origin/master
 
 cd .vim/bundle/command-t/ruby/command-t
 ruby extconf.rb
+make clean
 make
 cd -
