@@ -10,7 +10,7 @@ filetype indent plugin on
 syntax on
 
 " change the mapleader from \ to ,
-let mapleader = ","
+let mapleader = "\<Space>"
 
 " After this file is sourced, plug-in code will be evaluated.
 " See ~/.vim/after for files evaluated after that.
