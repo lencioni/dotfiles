@@ -4,6 +4,7 @@ ln -s dotfiles/.gitconfig .
 ln -s dotfiles/.gitexcludes .
 ln -s dotfiles/.oh-my-zsh .
 ln -s dotfiles/.rdebugrc .
+ln -s dotfiles/.rspec .
 ln -s dotfiles/.shells .
 ln -s dotfiles/.slate .
 ln -s dotfiles/.tmux.conf .
