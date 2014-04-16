@@ -21,6 +21,10 @@ export ZSH_THEME="candy"
 
 export ZSH=$HOME/.oh-my-zsh
 export DISABLE_AUTO_UPDATE="true"
+
+# Display red dots while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+
 plugins=(git brew gem knife rails ruby)
 source $ZSH/oh-my-zsh.sh
 
