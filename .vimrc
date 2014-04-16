@@ -12,6 +12,9 @@ syntax on
 " change the mapleader from \ to ,
 let mapleader = "\<Space>"
 
+" Turn off pair matching highlighting (it is very slow)
+let loaded_matchparen = 1
+
 " After this file is sourced, plug-in code will be evaluated.
 " See ~/.vim/after for files evaluated after that.
 " See `:scriptnames` for a list of all scripts, in evaluation order.
