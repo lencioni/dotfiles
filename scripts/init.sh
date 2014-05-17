@@ -1,3 +1,4 @@
+git submodule update --init
 cd ~
 ln -s dotfiles/.ackrc .
 ln -s dotfiles/.gitconfig .
