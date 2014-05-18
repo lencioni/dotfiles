@@ -1,0 +1,125 @@
+#!/bin/sh
+
+# Many of these settings taken (or modified) from:
+#
+#   https://github.com/mathiasbynens/dotfiles/commits/master/.osx
+#
+# Numbers in square brackets indicate system version on which these settings
+# were last verified to work.
+
+# [10.9] System Preferences -> Desktop & Screen Saver -> Transluscent menu bar -> off
+# Requires logout.
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+
+# [10.9] Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+ # [10.9] Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# [10.9] Use plain text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
+
+# [10.9] Show the ~/Library folder
+chflags nohidden ~/Library
+
+# [10.9] Finder: disable window animations and Get Info animations
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# [10.9] Finder: allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# [10.9] Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# [10.9] Disable smart quotes, dashes, ellipses
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# [10.9] Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# [10.9] Finder: allow quitting via Command-Q; doing so will also hide desktop icons
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# [10.9] [Don't] display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
+
+# [10.9] Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# [10.9] Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# [10.9] Automatically quit printer app once the print jobs complete
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+# [10.9] Misc `systemsetup` settings: see `man systemsetup`
+sudo systemsetup -settimezone America/Los_Angeles
+sudo systemsetup -setusingnetworktime on
+sudo systemsetup -setcomputersleep 60
+sudo systemsetup -setdisplaysleep 15
+sudo systemsetup -setharddisksleep Never
+sudo systemsetup -setrestartfreeze on
+sudo systemsetup -setremoteappleevents off
+
+# [10.9] Disable the sudden motion sensor as it’s not useful for SSDs
+# [Probably useless; no way to verify this command works]
+sudo pmset -a sms 0
+
+# [10.9] Disable local Time Machine snapshots
+sudo tmutil disable
+sudo tmutil disablelocal
+
+# Reveal IP address, hostname, OS version, etc. when clicking the clock
+# in the login window
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Use scroll gesture with the Ctrl (^) modifier key to zoom
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# Follow the keyboard focus while zoomed in
+defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
+# [10.9] Disable press-and-hold for keys in favor of key repeat
+# Requires logout.
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set a blazingly fast keyboard repeat rate
+# Requires logout.
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# [10.9] Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Save screenshots to screenshots directory
+defaults write com.apple.screencapture location -string "${HOME}/screenshots"
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+
+# Set the icon size of Dock items to 16 pixels
+defaults write com.apple.dock tilesize -int 16
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
+for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+  "Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
+  "Terminal" "Transmission" "Twitter" "iCal"; do
+  killall "${app}" > /dev/null 2>&1
+done
