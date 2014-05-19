@@ -14,3 +14,5 @@ ln -s dotfiles/.vim .
 ln -s dotfiles/.zlogin .
 rm .zshrc
 ln -s dotfiles/.zshrc .
+
+cp dotfiles/fonts/Inconsolata-dz-Powerline.otf ~/Library/Fonts
