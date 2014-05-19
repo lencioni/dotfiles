@@ -16,3 +16,5 @@ rm .zshrc
 ln -s dotfiles/.zshrc .
 
 cp dotfiles/fonts/Inconsolata-dz-Powerline.otf ~/Library/Fonts
+
+dotfiles/.osx
