@@ -13,6 +13,7 @@ alias external          2560x1600
 alias chrome            'Google Chrome':REPEAT_LAST
 alias term              'iTerm':REPEAT_LAST
 alias textual           'Textual'
+alias slack             'Slack'
 
 # Position Aliases
 alias full              move                    screenOriginX;screenOriginY screenSizeX;screenSizeY
@@ -79,10 +80,12 @@ bind esc:cmd hint
 layout                  one-monitor             ${chrome}   ${full} ${internal}
 layout                  one-monitor             ${term}     ${full} ${internal}
 layout                  one-monitor             ${textual}  ${full} ${internal}
+layout                  one-monitor             ${slack}    ${full} ${internal}
 
 layout                  two-monitors            ${chrome}   ${big-left} ${external}
 layout                  two-monitors            ${term}     ${full} ${external}
 layout                  two-monitors            ${textual}  ${full} ${internal}
+layout                  two-monitors            ${slack}    ${full} ${internal}
 
 # for testing layouts
 bind f1:ctrl;alt;cmd layout one-monitor
