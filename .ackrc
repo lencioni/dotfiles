@@ -1,13 +1,32 @@
+# Add extensions
 --type-add=ruby=.haml
 --type-add=ruby=.hamljs
---type-set=scss=.scss
+--type-add=ruby=.ru
+--type-add=ruby=.rake
 
+# Ignore directories
+--ignore-dir=bower_components
 --ignore-dir=coverage
 --ignore-dir=fixtures
 --ignore-dir=log
+--ignore-dir=node_modules
 --ignore-dir=tmp
 --ignore-dir=vendor
 
+# Ignore files
+--ignore-file=ext:min
+
+# Sort the found files lexically
+--sort-files
+
 --type-set=ignored=.sql
---color
 --noignored
+
+# Use a pager
+--pager=less -FRSX
+
+# Highlight the matching text
+--color
+--color-filename=underline green
+--color-lineno=yellow
+--color-match=bold
