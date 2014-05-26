@@ -21,7 +21,7 @@
 	url = git://github.com/wincent/Command-T.git
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = git@github.com:lencioni/vim-colors-solarized.git
 [submodule "tmux/powerline"]
 	path = tmux/powerline
 	url = git://github.com/erikw/tmux-powerline.git
@@ -92,3 +92,6 @@
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "extras/inconsolata"]
+	path = extras/inconsolata
+	url = git@github.com:DeLaGuardo/Inconsolata-LGC.git

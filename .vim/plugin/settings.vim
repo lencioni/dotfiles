@@ -25,8 +25,3 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
-
-" Solarized
-colorscheme solarized
-set background=dark
-set t_Co=16

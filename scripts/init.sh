@@ -15,6 +15,7 @@ ln -s dotfiles/.zlogin .
 rm .zshrc
 ln -s dotfiles/.zshrc .
 
-cp dotfiles/fonts/Inconsolata-dz-Powerline.otf ~/Library/Fonts
+cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts
+cp dotfiles/extras/Inconsolata-dz-Powerline.otf ~/Library/Fonts
 
 dotfiles/.osx
