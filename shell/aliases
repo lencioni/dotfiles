@@ -1,0 +1,24 @@
+alias sr="ssh-reagent"
+alias :q="exit"
+
+alias be="bundle exec"
+alias berc="bundle exec rails console"
+alias bers="bundle exec rails server"
+
+alias g="git"
+alias gb="git branch"
+alias gbd="git branch -d"
+alias gbD="git branch -D"
+alias gc="git commit"
+alias gd="git diff"
+alias gr="git refresh"
+alias gp="git patch"
+alias ga="git amend"
+alias gpg="git push gerrit"
+alias grc="git rebase --continue"
+alias gri="git rebase --interactive"
+
+alias f="flow"
+alias fci="flow commit"
+
+alias deploy="~/stark/stark_remote deploy"
