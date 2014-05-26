@@ -28,6 +28,9 @@ fi
 
 export EDITOR=vim
 
+# Source .zshrc.local if it exists
+test -r ~/.zshrc.local && source ~/.zshrc.local
+
 #
 # Load extra functionality
 #
