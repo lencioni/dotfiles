@@ -1,25 +1,23 @@
 #
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
+# Basic configuration
 #
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
-
-# The following lines were added by compinstall
-setopt appendhistory autocd beep extendedglob nomatch
+setopt appendhistory
+setopt autocd
+setopt beep
+setopt extendedglob
+setopt nomatch
 setopt nonomatch # unmatched patterns are left unchanged
 
 zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '/home/joe/.zshrc'
-
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
+
+# Source Prezto
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 # Load rbenv if available
 if which rbenv > /dev/null; then
@@ -36,7 +34,7 @@ test -r ~/.zshrc.local && source ~/.zshrc.local
 #
 
 if [ -d ~/dotfiles ] ; then
-    export DOTFILES=~/dotfiles
+  export DOTFILES=~/dotfiles
 fi
 
 if [ $DOTFILES ] ; then
