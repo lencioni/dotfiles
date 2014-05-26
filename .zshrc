@@ -1,5 +1,16 @@
-# The following lines were added by compinstall
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
 
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# The following lines were added by compinstall
 setopt appendhistory autocd beep extendedglob nomatch
 setopt nonomatch # unmatched patterns are left unchanged
 
@@ -8,6 +19,7 @@ zstyle :compinstall filename '/home/joe/.zshrc'
 
 autoload -Uz compinit
 compinit
+# End of lines added by compinstall
 
 # Load rbenv if available
 if which rbenv > /dev/null; then
@@ -15,17 +27,5 @@ if which rbenv > /dev/null; then
 fi
 
 export EDITOR=vim
-
-# End of lines added by compinstall
-export ZSH_THEME="candy"
-
-export ZSH=$HOME/.oh-my-zsh
-export DISABLE_AUTO_UPDATE="true"
-
-# Display red dots while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
-plugins=(git brew gem knife rails ruby)
-source $ZSH/oh-my-zsh.sh
 
 source $HOME/.shells/path
