@@ -41,5 +41,3 @@ if [ $DOTFILES ] ; then
     source $f
   done
 fi
-
-source $HOME/.shells/path
