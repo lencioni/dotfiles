@@ -1,4 +1,4 @@
-git submodule update --init
+git submodule update --init --recursive
 cd ~
 ln -s dotfiles/.ackrc .
 ln -s dotfiles/.gitconfig .
