@@ -1,4 +1,5 @@
 set autoindent                   " keep indentation when starting new lines
+set autoread                     " automatically load external changes to files that don't have unsaved changes
 set backspace=indent,start,eol   " allow unrestricted backspacing in insert mode
 set expandtab                    " always use spaces instead of tabs
 set hidden                       " keep undo when changing buffers
