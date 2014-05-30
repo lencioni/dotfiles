@@ -25,6 +25,7 @@ if which rbenv > /dev/null; then
 fi
 
 export EDITOR=vim
+export VISUAL=vim
 
 # Source .zshrc.local if it exists
 test -r ~/.zshrc.local && source ~/.zshrc.local
