@@ -24,9 +24,10 @@
   # see `man git-apply' for other options
 
 [core]
-  excludesfile = ~/.gitexcludes
+  attributesfile = ~/.gitattributes
   editor = vim
   # global gitignore, useful for hiding editor files
+  excludesfile = ~/.gitexcludes
 
 [help]
   autocorrect = 10
