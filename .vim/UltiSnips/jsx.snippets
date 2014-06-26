@@ -1,0 +1,15 @@
+snippet component "React component"
+'use strict';
+
+var React = require('react');
+
+var ${1:ModuleName} = React.createClass({
+	render: function() {
+	  return (
+			$0
+		);
+	}
+});
+
+module.exports = $1;
+endsnippet
