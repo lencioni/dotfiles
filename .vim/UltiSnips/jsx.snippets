@@ -17,6 +17,10 @@ componentDidMount: function() {
 endsnippet
 
 snippet cdu "componentDidUpdate" b
+/**
+ * @param {Object} prevProps
+ * @param {Object} prevState
+ */
 componentDidUpdate: function(prevProps, prevState) {
 	$0
 },
@@ -29,6 +33,9 @@ componentWillMount: function() {
 endsnippet
 
 snippet cwrp "componentWillReceiveProps" b
+/**
+ * @param {Object} nextProps
+ */
 componentWillReceiveProps: function(nextProps) {
 	$0
 },
@@ -41,12 +48,19 @@ componentWillUnmount: function() {
 endsnippet
 
 snippet cwu "componentWillUpdate" b
+/**
+ * @param {Object} nextProps
+ * @param {Object} nextState
+ */
 componentWillUpdate: function(nextProps, nextState) {
 	$0
 },
 endsnippet
 
 snippet gdp "getDefaultProps" b
+/**
+ * @return {Object}
+ */
 getDefaultProps: function() {
 	return {
 		$0
@@ -55,6 +69,9 @@ getDefaultProps: function() {
 endsnippet
 
 snippet gis "getInitialState" b
+/**
+ * @return {Object}
+ */
 getInitialState: function() {
 	return {
 		$0
@@ -63,6 +80,11 @@ getInitialState: function() {
 endsnippet
 
 snippet scu "shouldComponentUpdate" b
+/**
+ * @param {Object} nextProps
+ * @param {Object} nextState
+ * @return {boolean}
+ */
 shouldComponentUpdate: function(nextProps, nextState) {
 	return ${1:true};
 },
