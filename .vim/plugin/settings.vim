@@ -7,7 +7,7 @@ set history=1000                 " make vim remember more than 20 commands
 set nu                           " enable number lines
 set scrolloff=6                  " maintain 6 lines of context around the cursor
 set shiftwidth=2                 " spaces per tab (when shifting)
-set softtabstop=2                " spaces per tab (when tabbing/backspacing)
+set softtabstop=-1               " spaces per tab (when tabbing/backspacing).
 set tabstop=2                    " spaces per tab
 set visualbell                   " replace beeping with a visual bell
 set whichwrap=b,h,l,s,<,>,[,],~  " allow <BS>/h/l/<Left>/<Right>/<Space>, ~ to cross line boundaries
