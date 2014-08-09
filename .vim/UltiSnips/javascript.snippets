@@ -15,3 +15,27 @@ else if (${1:condition}) {
 	$0
 }
 endsnippet
+
+snippet fun "function with dynamic docblock" b
+`!p
+# Currently Ultisnips does not support dynamic tabstops, so we cannot add
+# tabstops to the datatype for these param tags until that feature is added.
+def formatTag(argument):
+	return " * @param {{}} {0}".format(argument)
+
+arguments = t[2].split(',')
+arguments = [argument.strip() for argument in arguments if argument]
+
+if len(arguments):
+	tags = map(formatTag, arguments)
+	snip.rv = "/**"
+	for tag in tags:
+		snip += tag
+	snip += ' */'
+	snip += ''
+else:
+	snip.rv = ''
+`${1:name}: function(${2:arguments}) {
+	$0
+},
+endsnippet
