@@ -12,6 +12,7 @@
 --ignore-dir=node_modules
 --ignore-dir=tmp
 --ignore-dir=vendor
+--ignore-dir=.sass-cache
 
 # Ignore files
 --ignore-file=ext:min
