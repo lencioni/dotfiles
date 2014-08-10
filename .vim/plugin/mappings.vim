@@ -28,6 +28,9 @@ nmap sk :SplitjoinJoin<cr>
 " Prevent Q from entering ex mode by mapping it to play the q macro
 nnoremap Q @q
 
+" Clear search highlighting by pressing <esc>
+nnoremap <esc> :nohlsearch<return><esc>
+
 "
 " Insert mode mappings
 "
