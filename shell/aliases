@@ -1,5 +1,6 @@
 alias sr="ssh-reagent"
 alias :q="exit"
+alias :e="vim"
 
 alias be="bundle exec"
 alias berc="bundle exec rails console"
