@@ -1,6 +1,7 @@
 git submodule update --init --recursive
 cd ~
 ln -s dotfiles/.ackrc .
+ln -s dotfiles/.ctags .
 ln -s dotfiles/.gitattributes .
 ln -s dotfiles/.gitconfig .
 ln -s dotfiles/.gitexcludes .
