@@ -19,6 +19,8 @@ set nu                            " enable number lines
 set scrolloff=6                   " maintain 6 lines of context around the cursor
 set shiftround                    " round indent to shiftwidth when using > and <
 set shiftwidth=2                  " spaces per tab (when shifting)
+set shortmess+=A                  " ignore annoying swapfile messages
+set shortmess+=I                  " no splash screen
 set smartcase                     " case-sensitive search if search string includes a capital letter
 set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
 set tabstop=2                     " spaces per tab
