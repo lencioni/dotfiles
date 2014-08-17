@@ -24,6 +24,12 @@ set shortmess+=I                  " no splash screen
 set smartcase                     " case-sensitive search if search string includes a capital letter
 set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
 set tabstop=2                     " spaces per tab
+
+if has('persistent_undo')
+  set undodir=~/.vim/tmp/undo,.   " keep undo files out of the way
+  set undofile                    " actually use undo files
+endif
+
 set visualbell                    " replace beeping with a visual bell
 set whichwrap=b,h,l,s,<,>,[,],~   " <BS>/h/l/<Left>/<Right>/<Space>/~ can cross line boundaries
 set wildignore+=*.o,.git,tmp,log  " patterns to ignore during file-navigation
