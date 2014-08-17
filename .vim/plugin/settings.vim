@@ -33,3 +33,6 @@ endif
 set visualbell                    " replace beeping with a visual bell
 set whichwrap=b,h,l,s,<,>,[,],~   " <BS>/h/l/<Left>/<Right>/<Space>/~ can cross line boundaries
 set wildignore+=*.o,.git,tmp,log  " patterns to ignore during file-navigation
+set wildignore+=.sass-cache       " only auto-generated Sass junk
+set wildignore+=bower_components  " vendored files
+set wildignore+=node_modules      " typically thousands of vendored files here
