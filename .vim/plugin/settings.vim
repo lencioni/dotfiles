@@ -18,7 +18,7 @@ set incsearch                     " incremental search
 set nu                            " enable number lines
 set scrolloff=6                   " maintain 6 lines of context around the cursor
 set shiftwidth=2                  " spaces per tab (when shifting)
-set smartcase                     " case-insensitive search search contains uppercase
+set smartcase                     " case-sensitive search if search string includes a capital letter
 set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
 set tabstop=2                     " spaces per tab
 set visualbell                    " replace beeping with a visual bell
