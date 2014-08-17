@@ -9,6 +9,7 @@ endif
 
 set directory=~/.vim/tmp/swap,.   " keep swap files out of the way
 set expandtab                     " always use spaces instead of tabs
+set formatoptions+=n              " smart auto-indenting inside numbered lists
 set hidden                        " keep undo when changing buffers
 set history=1000                  " make vim remember more than 20 commands
 set hlsearch                      " highlight search strings
