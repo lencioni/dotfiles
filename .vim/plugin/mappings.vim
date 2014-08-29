@@ -1,4 +1,11 @@
 "
+" Visual mode mappings
+"
+
+vnoremap <leader><Tab>= :Tabularize /=\s.*/<CR>
+vnoremap <leader><Tab>; :Tabularize /:\zs\s.*/<CR>
+
+"
 " Normal mode mappings
 "
 
