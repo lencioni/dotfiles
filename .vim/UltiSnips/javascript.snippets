@@ -71,11 +71,17 @@ endsnippet
 
 # JSDoc
 
-snippet @par
+snippet /**
+/**
+ * @$0
+ */
+endsnippet
+
+snippet @par "@param {...}"
 @param {${1:type}} ${2:name} ${0:description}
 endsnippet
 
-snippet @ret
+snippet @ret "@return {...}"
 @return {${1:type}} ${0:description}
 endsnippet
 
