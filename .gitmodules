@@ -11,7 +11,7 @@
 	path = .vim/bundle/matchit
 	url = git://github.com/wzzrd/vim-matchit.git
 [submodule ".vim/bundle/surround"]
-	path = .vim/bundle/surround
+	path = .vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
@@ -23,7 +23,7 @@
 	path = tmux/powerline
 	url = git://github.com/erikw/tmux-powerline.git
 [submodule ".vim/bundle/javascript"]
-	path = .vim/bundle/javascript
+	path = .vim/bundle/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
@@ -38,7 +38,7 @@
 	path = tmux/solarized
 	url = git://github.com/seebi/tmux-colors-solarized.git
 [submodule ".vim/bundle/haml"]
-	path = .vim/bundle/haml
+	path = .vim/bundle/vim-haml
 	url = git://github.com/tpope/vim-haml.git
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
