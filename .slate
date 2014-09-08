@@ -6,7 +6,7 @@ config nudgePercentOf screenSize
 config resizePercentOf screenSize
 
 # Monitor Aliases
-alias internal          1440x900
+alias internal          1280x800
 alias external          2560x1600
 
 # App Aliases
