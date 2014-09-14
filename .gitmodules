@@ -89,3 +89,6 @@
 [submodule ".vim/bundle/vim-css3-syntax"]
 	path = .vim/bundle/vim-css3-syntax
 	url = git@github.com:hail2u/vim-css3-syntax.git
+[submodule ".vim/bundle/vim-signature"]
+	path = .vim/bundle/vim-signature
+	url = git@github.com:kshenoy/vim-signature.git
