@@ -11,7 +11,7 @@ alias external          2560x1600
 
 # App Aliases
 alias chrome            'Google Chrome':REPEAT_LAST
-alias term              'iTerm':REPEAT_LAST
+alias term              'iTerm2':REPEAT_LAST
 alias textual           'Textual'
 alias slack             'Slack'
 
