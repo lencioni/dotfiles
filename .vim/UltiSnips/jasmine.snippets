@@ -1,33 +1,33 @@
 snippet des "describe() block"
 describe('${1}', () => {
-	$0
+	${0:${VISUAL}}
 });
 endsnippet
 
 snippet con "context() block"
 context('${1}', () => {
-	$0
+	${0:${VISUAL}}
 });
 endsnippet
 
 snippet bef "beforeEach() block"
 beforeEach(() => {
-	$0
+	${0:${VISUAL}}
 });
 endsnippet
 
 snippet aft "afterEach() block"
 afterEach(() => {
-	$0
+	${0:${VISUAL}}
 });
 endsnippet
 
 snippet it "it() block"
 it('${1}', () => {
-	$0
+	${0:${VISUAL}}
 });
 endsnippet
 
 snippet exp "expect() assertion"
-expect(${1})${2}.to${3}($0);
+expect(${1})${2}.to${3}(${0:${VISUAL}});
 endsnippet
