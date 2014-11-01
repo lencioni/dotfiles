@@ -1,0 +1,31 @@
+# RSpec
+
+snippet des "describe '...' do ... end"
+describe '$1' do
+	${0:${VISUAL}}
+end
+endsnippet
+
+snippet con "context '...' do ... end"
+context '$1' do
+	${0:${VISUAL}}
+end
+endsnippet
+
+snippet it "it { ... }"
+it { ${0:${VISUAL}} }
+endsnippet
+
+snippet its "its(:...) { ... }"
+its(:$1) { ${0:${VISUAL}} }
+endsnippet
+
+snippet itd "it '...' do ... end"
+it '$1' do
+	${0:${VISUAL}}
+end
+endsnippet
+
+snippet let "let(:...) { ... }"
+let(:$1) { ${0:${VISUAL}} }
+endsnippet
