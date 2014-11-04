@@ -16,7 +16,7 @@ endsnippet
 
 snippet foro "for...of" b
 for (let ${1:value} of ${2:Things}) {
-	$0
+	${0:${VISUAL}}
 }
 endsnippet
 
@@ -25,19 +25,19 @@ endsnippet
 
 snippet if "if" b
 if (${1}) {
-	$0
+	${0:${VISUAL}}
 }
 endsnippet
 
 snippet el "else"
 else {
-	$0
+	${0:${VISUAL}}
 }
 endsnippet
 
 snippet eif "else if" !
 else if (${1}) {
-	$0
+	${0:${VISUAL}}
 }
 endsnippet
 
@@ -64,7 +64,7 @@ if len(arguments):
 else:
 	snip.rv = ''
 `${1}: function(${2}) {
-	$0
+	${0:${VISUAL}}
 },
 endsnippet
 
@@ -73,7 +73,7 @@ endsnippet
 
 snippet /**
 /**
- * $0
+ * ${0:${VISUAL}}
  */
 endsnippet
 
