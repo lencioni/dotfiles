@@ -42,6 +42,21 @@ else if (${1}) {
 endsnippet
 
 
+# Switches
+
+snippet sw "switch" b
+switch (${1}) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet case "case" b
+case ${1}:
+	${0:${VISUAL}}
+	break;
+endsnippet
+
+
 # Function
 
 snippet fun "function with dynamic docblock" b
