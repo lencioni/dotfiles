@@ -19,7 +19,10 @@ let g:syntastic_warning_symbol       = '⚠'
 let g:syntastic_style_error_symbol   = '⚠'
 let g:syntastic_style_warning_symbol = '⚠'
 
-let g:syntastic_haml_checkers       = ['haml_lint']
-let g:syntastic_javascript_checkers = ['jsxhint']
-let g:syntastic_ruby_checkers       = ['rubocop']
-let g:syntastic_scss_checkers       = ['scss_lint']
+let g:syntastic_haml_checkers        = ['haml_lint']
+
+let g:syntastic_javascript_checkers  = ['jsxhint', 'jscs']
+let g:syntastic_javascript_jscs_exec = 'jsxcs'
+
+let g:syntastic_ruby_checkers        = ['rubocop']
+let g:syntastic_scss_checkers        = ['scss_lint']
