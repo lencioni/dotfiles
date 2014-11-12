@@ -108,7 +108,12 @@ console.log($0);
 endsnippet
 
 snippet req "require"
-require('${1}')${2:,}$0
+var `!p
+def formatVariableName(path):
+	lastPart = path.split('/')[-1]
+	return string.replace(lastPart.title(), '_', '');
+snip.rv = formatVariableName(t[1])
+` = require('${1}');$0
 endsnippet
 
 snippet me "module.exports"
