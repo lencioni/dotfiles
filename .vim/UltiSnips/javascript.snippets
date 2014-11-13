@@ -8,8 +8,8 @@ endsnippet
 
 snippet fori "for...in" b
 for (let ${1:prop} in ${2:Things}) {
-	if ($2.hasOwnProperty($1))) {
-		${0:var ${3:value} = $2[$1];}
+	if ($2.hasOwnProperty($1)) {
+		${0:let ${3:value} = $2[$1];}
 	}
 }
 endsnippet
