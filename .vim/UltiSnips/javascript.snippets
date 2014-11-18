@@ -107,7 +107,7 @@ snippet cl "console.log(...)" b
 console.log($0);
 endsnippet
 
-snippet req "require"
+snippet re "require" b
 var `!p
 def formatVariableName(path):
 	lastPart = path.split('/')[-1]
@@ -121,6 +121,6 @@ snip.rv = formatVariableName(t[1])
 ` = require('${1}');$0
 endsnippet
 
-snippet me "module.exports"
+snippet me "module.exports" b
 module.exports = ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
 endsnippet

@@ -1,4 +1,4 @@
-snippet cc "createClass"
+snippet cc "createClass" b
 var ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`} = React.createClass({
 	/**
 	 * @return {Object}
