@@ -116,7 +116,7 @@ def formatVariableName(path):
 	elif lastPart == 'jquery':
 		return '$'
 	else:
-		return string.replace(lastPart.title(), '_', '');
+		return re.sub(r'[_\-]', '', lastPart.title())
 snip.rv = formatVariableName(t[1])
 ` = require('${1}');$0
 endsnippet
