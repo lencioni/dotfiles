@@ -31,4 +31,5 @@ function! s:DetectJSX(file)
 endfunction
 
 autocmd BufNewFile,BufRead *.js.jsx set ft=javascript.jsx
+autocmd BufNewFile,BufRead *{_spec,Spec,-test}.js.jsx set ft=javascript.jasmine.jsx
 autocmd BufNewFile,BufRead *.html,*.js call s:DetectJSX(expand("<afile>"))
