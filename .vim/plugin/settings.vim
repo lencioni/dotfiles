@@ -16,7 +16,8 @@ set history=1000                  " make vim remember more than 20 commands
 set hlsearch                      " highlight search strings
 set ignorecase                    " ignore case when searching
 set incsearch                     " incremental search
-set nu                            " enable number lines
+set nojoinspaces                  " don't autoinsert two spaces after '.', '?', '!' for join command
+set number                        " enable number lines
 set scrolloff=6                   " maintain 6 lines of context around the cursor
 set shiftround                    " round indent to shiftwidth when using > and <
 set shiftwidth=2                  " spaces per tab (when shifting)
@@ -24,6 +25,8 @@ set shortmess+=A                  " ignore annoying swapfile messages
 set shortmess+=I                  " no splash screen
 set smartcase                     " case-sensitive search if search string includes a capital letter
 set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
+set splitbelow                    " open horizontal splits below current window
+set splitright                    " open vertical splits to the right of the current window
 set tabstop=2                     " spaces per tab
 
 if has('persistent_undo')
