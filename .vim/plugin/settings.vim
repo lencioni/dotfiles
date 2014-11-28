@@ -4,7 +4,7 @@ set backspace=indent,start,eol    " allow unrestricted backspacing in insert mod
 set backupdir=~/.vim/tmp/backup,. " keep backup files out of the way
 
 if exists('+colorcolumn')
-  set colorcolumn=80              " Vertical line at 80 characters
+  set colorcolumn=+0              " Vertical line at `textwidth` characters
 endif
 
 set directory=~/.vim/tmp/swap,.   " keep swap files out of the way
