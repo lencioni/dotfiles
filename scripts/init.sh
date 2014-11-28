@@ -15,11 +15,11 @@ ln -s dotfiles/.vim .
 
 ln -s dotfiles/.zprezto .
 ln -s dotfiles/.zpreztorc .
+ln -s dotfiles/.zprofile .
 rm .zshrc
 ln -s dotfiles/.zshrc .
 ln -s .zprezto/runcoms/zlogin .zlogin
 ln -s .zprezto/runcoms/zlogout .zlogout
-ln -s .zprezto/runcoms/zprofile .zprofile
 ln -s .zprezto/runcoms/zshenv .zshenv
 
 cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts
