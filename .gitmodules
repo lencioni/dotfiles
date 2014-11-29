@@ -101,3 +101,6 @@
 [submodule ".vim/bundle/vim-projectionist"]
 	path = .vim/bundle/vim-projectionist
 	url = git@github.com:tpope/vim-projectionist.git
+[submodule ".vim/bundle/vim-easydir"]
+	path = .vim/bundle/vim-easydir
+	url = https://github.com/dockyard/vim-easydir.git
