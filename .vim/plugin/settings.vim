@@ -28,6 +28,7 @@ set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
 set splitbelow                    " open horizontal splits below current window
 set splitright                    " open vertical splits to the right of the current window
 set tabstop=2                     " spaces per tab
+set textwidth=80                  " automatically hard wrap
 
 if has('persistent_undo')
   set undodir=~/.vim/tmp/undo,.   " keep undo files out of the way
