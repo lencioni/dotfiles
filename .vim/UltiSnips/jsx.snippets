@@ -1,5 +1,9 @@
+global !p
+from snippet_helpers import *
+endglobal
+
 snippet cc "createClass" b
-var ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`} = React.createClass({
+var ${1:`!p snip.rv = pascalCase(snip.basename)`} = React.createClass({
 	/**
 	 * @return {Object}
 	 */

@@ -1,3 +1,7 @@
+global !p
+from snippet_helpers import *
+endglobal
+
 # Loops
 
 snippet for "for loop" !
@@ -124,5 +128,5 @@ snip.rv = formatVariableName(t[1])
 endsnippet
 
 snippet me "module.exports" b
-module.exports = ${1:`!p snip.rv = ''.join(x.title() for x in re.sub('\.js$', '', snip.basename or 'ModuleName').split('_'))`};$0
+module.exports = ${1:`!p snip.rv = pascalCase(snip.basename)`};$0
 endsnippet
