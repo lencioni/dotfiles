@@ -1,0 +1,10 @@
+global !p
+from snippet_helpers import *
+endglobal
+
+# BEM Convention
+snippet . ".bem-block-name"
+.`!p snip.rv = dasherize_basename(snip.basename)`$1 {
+	$0
+}
+endsnippet
