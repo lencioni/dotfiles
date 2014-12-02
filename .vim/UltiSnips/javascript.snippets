@@ -115,6 +115,8 @@ def formatVariableName(path):
 		return '_'
 	elif lastPart == 'jquery':
 		return '$'
+	elif lastPart == 'i18n':
+		return 'I18n'
 	else:
 		return re.sub(r'[_\-]', '', lastPart.title())
 snip.rv = formatVariableName(t[1])
