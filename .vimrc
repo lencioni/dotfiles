@@ -9,7 +9,7 @@ call pathogen#helptags()              " wasteful, but no shortage of grunt avail
 filetype indent plugin on
 syntax on
 
-" change the mapleader from \ to ,
+" change the mapleader from \ to <Space>
 let mapleader = "\<Space>"
 
 " Turn off pair matching highlighting (it is very slow)
