@@ -18,4 +18,5 @@
 PreCommit:
   HardTabs:
     exclude:
-      - '.vim/UltiSnips/*'
+      - .gitconfig
+      - .vim/UltiSnips/*
