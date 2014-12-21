@@ -38,7 +38,6 @@
 	st = status
 	ci = commit
 	co = checkout
-	au = add -u
 	b = branch
 
 	oneline = log --oneline
@@ -70,55 +69,8 @@
 	# take staging and push it into the previous commit
 	# useful when adding small chunks to a WIP commit
 
-	staged = diff --cached
-	both = diff HEAD
-	unmerged = diff --diff-filter=U --name-only
-	# shows modified+staged union diff
-
-	sha1 = !sh -c 'git rev-parse ${1-`echo HEAD`}' -
-	# sha1 of the current branch's HEAD
-
-	abbrev = !sh -c 'git rev-parse --short ${1-`echo HEAD`}' -
-	# shows a 7 character abbreviation of a reference, defaulting to HEAD
-
-	ph = push origin HEAD
-	# push HEAD on the current branch to the branch on origin
-
-	poh = pull --rebase origin HEAD
-	# pull upstream changes locally only if
-	# - local is already up to date
-	# - local changes can be cleanly rebased on top of origin and fast-forwarded
-
-	rom = rebase origin/master
-	# useful rebasing your topic branch against the newest version of master
-
-	from = !sh -c 'git fetch origin && git rebase origin/master' -
-	# fetch origin and rebase against origin master
-
-	resom = !sh -c 'git fetch origin && git reset --hard origin/master' -
-	# fetch origin and reset hard to origin/master
-
-	fixup = !sh -c 'git commit --fixup $1 && \
-									git stash && \
-									git rebase -i $1~1 && \
-									git stash pop' -
-	# amend to a previous commit:
-	#  git add file
-	#  git fixup HEAD^^
-	# will put the changes to 'file' to the commit two behind HEAD
-
-	ri = rebase --interactive --autosquash
-	# perform an interactive rebase from a given commitish
-
-	fresh = !sh -c 'git fetch --all && git reset --hard origin/master' -
-	# fetch from all remotes and reset to origin/master
-
 	su = submodule update --init
 	# update or initialize each submodule
-
-	ten = log --oneline --graph -10
-
-	ridof = !sh -c 'wc -l $1 && git rm $1' -
 
 	refresh = !ssh-add -l && STASH=$(git stash) && git fetch && git rebase origin/master && test \"$STASH\" != \"No local changes to save\" && git stash pop
 
