@@ -12,6 +12,12 @@ vnoremap <leader><Tab>; :Tabularize /:\zs\s.*/<CR>
 " \rh -- Convert hashrockets to Ruby 1.9
 nnoremap <leader>rh :%s/\v(:)@<!:([a-zA-Z_][a-zA-Z_0-9]*)(\s*)\=\>\s?/\2:\3/gc<cr>
 
+" \\ -- open last buffer
+nnoremap <leader><leader> <C-^>
+
+" \e -- edit file, starting in same directory as current file
+nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
 " \a -- Ack
 nnoremap <leader>a :Ack<space>
 
