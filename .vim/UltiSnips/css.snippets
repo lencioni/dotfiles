@@ -2,6 +2,86 @@ global !p
 from snippet_helpers import *
 endglobal
 
+# Border
+snippet b "border" b
+border: $0
+endsnippet
+
+snippet bt "border-top" b
+border-top: $0
+endsnippet
+
+snippet br "border-right" b
+border-right: $0
+endsnippet
+
+snippet bb "border-bottom" b
+border-bottom: $0
+endsnippet
+
+snippet bl "border-left" b
+border-left: $0
+endsnippet
+
+# Margin
+snippet m "margin" b
+margin: $0
+endsnippet
+
+snippet mt "margin-top" b
+margin-top: $0
+endsnippet
+
+snippet mr "margin-right" b
+margin-right: $0
+endsnippet
+
+snippet mb "margin-bottom" b
+margin-bottom: $0
+endsnippet
+
+snippet ml "margin-left" b
+margin-left: $0
+endsnippet
+
+# Padding
+snippet p "padding" b
+padding: $0
+endsnippet
+
+snippet pt "padding-top" b
+padding-top: $0
+endsnippet
+
+snippet pr "padding-right" b
+padding-right: $0
+endsnippet
+
+snippet pb "padding-bottom" b
+padding-bottom: $0
+endsnippet
+
+snippet pl "padding-left" b
+padding-left: $0
+endsnippet
+
+# Text
+snippet fs "font-size" b
+font-size: $0
+endsnippet
+
+snippet lh "line-height" b
+line-height: $0
+endsnippet
+
+snippet ta "text-align" b
+text-align: $0
+endsnippet
+
+snippet tt "text-transform" b
+text-transform: ${1:uppercase};$0
+endsnippet
+
 # BEM Convention
 snippet . ".bem-block-name"
 .`!p snip.rv = dasherize_basename(snip.basename)`$1 {
