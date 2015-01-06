@@ -4,12 +4,6 @@ augroup RemoveTrailingWhitespace
   autocmd BufWritePre * :%s/\s\+$//e
 augroup END
 
-" Disable paste mode when leaving insert mode
-augroup DisablePastModeWhenLeavingInsertMode
-  autocmd!
-  autocmd InsertLeave * set nopaste
-augroup END
-
 " Automatically reload vimrc when it's saved
 augroup AutoReloadVimRC
   autocmd!
