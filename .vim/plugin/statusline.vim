@@ -15,5 +15,5 @@ if has('statusline')
   "   %V current virtual column number (-n), if different from %c
   "   %P percentage through buffer
   "   %) end of width specification
-  set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+  set statusline=%<\ %n:%f\ %m%r%y%=%-28.(㏑\ %l/%L,\ col\ %c%V\ (%P)%)
 endif
