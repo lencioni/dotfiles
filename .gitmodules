@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule ".vim/bundle/vimrails"]
-	path = .vim/bundle/vimrails
-	url = git://github.com/tpope/vim-rails.git
 [submodule ".vim/bundle/matchit"]
 	path = .vim/bundle/matchit
 	url = git://github.com/wzzrd/vim-matchit.git
