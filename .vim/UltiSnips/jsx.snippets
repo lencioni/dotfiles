@@ -86,10 +86,19 @@ getInitialState: function() {
 },
 endsnippet
 
+snippet vpt "var PropTypes = React.PropTypes;" b
+var PropTypes = React.PropTypes;
+endsnippet
+
 snippet pt "propTypes" b
 propTypes: {
 	$0
 },
+endsnippet
+
+snippet Pt "PropTypes" w
+PropTypes.$1`!p snip.rv=complete(t[1], ['array', 'bool', 'func', 'number',
+'object', 'string', 'node', 'element', 'instanceOf', 'oneOf', 'oneOfType', 'arrayOf', 'objectOf', 'shape', 'any'])`,$0
 endsnippet
 
 snippet scu "shouldComponentUpdate" b
