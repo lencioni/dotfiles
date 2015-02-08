@@ -9,7 +9,11 @@ endif
 
 set directory=~/.vim/tmp/swap,.   " keep swap files out of the way
 set expandtab                     " always use spaces instead of tabs
-set formatoptions+=j              " where it makes sense, remove a comment leader when joining lines
+
+if v:version > 703 || v:version == 703 && has('patch541')
+  set formatoptions+=j            " remove comment leader when joining comment lines
+endif
+
 set formatoptions+=n              " smart auto-indenting inside numbered lists
 set hidden                        " allows you to hide buffers with unsaved changes without being prompted
 set history=1000                  " make vim remember more than 20 commands
