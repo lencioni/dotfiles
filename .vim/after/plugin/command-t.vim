@@ -18,5 +18,4 @@ endif
 "
 
 nnoremap <leader>f :CommandTFlush<CR>
-nnoremap <silent> <leader>j :CommandTJump<CR>
 nnoremap <leader>g :CommandTTag<CR>
