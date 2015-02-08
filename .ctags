@@ -1,5 +1,6 @@
 --recurse=yes
 --tag-relative=yes
+--fields=+l
 
 --exclude=.git
 --exclude=*.min.js
