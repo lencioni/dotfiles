@@ -22,22 +22,20 @@ if has('statusline')
   set statusline+=%*   " reset highlight group
   set statusline+=%=   " split point for left and right groups
   set statusline+=\    " space
-  set statusline+=㏑   " (literal)
-  set statusline+=\    " space
-  set statusline+=%l   " current line number
-  set statusline+=/    " space
-  set statusline+=%L   " number of lines in buffer
-  set statusline+=,    " (literal)
-  set statusline+=\    " space
-  set statusline+=col  " (literal)
-  set statusline+=\    " space
-  set statusline+=%c   " current column number
-  set statusline+=%V   " current virtual column number (-n), if different
-  set statusline+=\    " space
   set statusline+=(    " (literal)
   set statusline+=%p   " percentage through buffer
   set statusline+=%%   " literal %
   set statusline+=)    " (literal)
+  set statusline+=\    " space
+  set statusline+=%l   " current line number
+  set statusline+=/    " (literal)
+  set statusline+=%L   " number of lines in buffer
+  set statusline+=\    " space
+  set statusline+=@    " (literal)
+  set statusline+=\    " space
+  set statusline+=%c   " current column number
+  set statusline+=%V   " current virtual column number (-n), if different
+  set statusline+=\    " space
 
   function! statusline#Ft()
     if strlen(&ft)
