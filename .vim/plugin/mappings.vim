@@ -22,7 +22,7 @@ nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <leader>a :Ack<space>
 
 " \w -- Easy save
-nnoremap <Leader>w :w<CR>
+nnoremap <leader>w :w<CR>
 
 " Q -- Prevent Q from entering ex mode by mapping it to play the q macro
 nnoremap Q @q
