@@ -14,7 +14,9 @@ if v:version > 703 || v:version == 703 && has('patch541')
   set formatoptions+=j            " remove comment leader when joining comment lines
 endif
 
+set formatoptions+=c              " auto-wrap comments using textwidth
 set formatoptions+=n              " smart auto-indenting inside numbered lists
+set formatoptions+=q              " allow formatting of comments with `gq`
 set hidden                        " allows you to hide buffers with unsaved changes without being prompted
 set history=1000                  " make vim remember more than 20 commands
 set hlsearch                      " highlight search strings
