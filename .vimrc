@@ -1,8 +1,9 @@
 set nocompatible
 
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()                " add .vim/bundle subdirs to runtime path
-call pathogen#helptags()              " wasteful, but no shortage of grunt available
+" add .vim/bundle subdirs to runtime path
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
 
 " automatic, language-dependent indentation, syntax coloring and other
 " functionality

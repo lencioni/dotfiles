@@ -95,3 +95,6 @@
 [submodule ".vim/bundle/vim-easydir"]
 	path = .vim/bundle/vim-easydir
 	url = https://github.com/dockyard/vim-easydir.git
+[submodule ".vim/bundle/vim-pathogen"]
+	path = .vim/bundle/vim-pathogen
+	url = git@github.com:tpope/vim-pathogen.git
