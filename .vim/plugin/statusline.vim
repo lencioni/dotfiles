@@ -10,22 +10,20 @@ if has('statusline')
 
   " needs to be all on one line:
   "   %(                   start item group
-  "   [                    left bracket (literal)
   "   %M                   modified flag: ,+/,- (modified/unmodifiable) or nothing
   "   %R                   read-only flag: ,RO or nothing
   "   %{statusline#Ft()}   filetype (not using %Y because I don't want caps)
   "   %{statusline#Fenc()} file-encoding if not UTF-8
-  "   ]                    right bracket (literal)
   "   %)                   end item group
-  set statusline+=%([%M%R%{statusline#Ft()}%{statusline#Fenc()}]%)
+  set statusline+=%(%M%R%{statusline#Ft()}%{statusline#Fenc()}%)
 
   set statusline+=%*   " reset highlight group
   set statusline+=%=   " split point for left and right groups
   set statusline+=\    " space
-  set statusline+=(    " (literal)
+  set statusline+=%1*  " switch to User1 highlight group (italics)
   set statusline+=%p   " percentage through buffer
   set statusline+=%%   " literal %
-  set statusline+=)    " (literal)
+  set statusline+=%*   " reset highlight group
   set statusline+=\    " space
   set statusline+=%l   " current line number
   set statusline+=/    " (literal)
