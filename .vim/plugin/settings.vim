@@ -50,6 +50,7 @@ if has('persistent_undo')
   set undofile                    " actually use undo files
 endif
 
+set virtualedit=block             " allow cursor to move where there is no text in visual block mode
 set visualbell                    " replace beeping with a visual bell
 set whichwrap=b,h,l,s,<,>,[,],~   " <BS>/h/l/<Left>/<Right>/<Space>/~ can cross line boundaries
 
