@@ -35,6 +35,7 @@ if has('showcmd')
   set showcmd                     " extra info at end of command line
 endif
 
+set sidescrolloff=3               " same as scolloff, but for columns
 set smartcase                     " case-sensitive search if search string includes a capital letter
 set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
 set splitbelow                    " open horizontal splits below current window
