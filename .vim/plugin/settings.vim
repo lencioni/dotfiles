@@ -30,6 +30,11 @@ set shiftround                    " round indent to shiftwidth when using > and 
 set shiftwidth=2                  " spaces per tab (when shifting)
 set shortmess+=A                  " ignore annoying swapfile messages
 set shortmess+=I                  " no splash screen
+
+if has('showcmd')
+  set showcmd                     " extra info at end of command line
+endif
+
 set smartcase                     " case-sensitive search if search string includes a capital letter
 set softtabstop=-1                " spaces per tab (when tabbing/backspacing).
 set splitbelow                    " open horizontal splits below current window
