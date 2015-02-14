@@ -54,3 +54,6 @@ set wildignore+=bower_components  " vendored files
 set wildignore+=log
 set wildignore+=node_modules      " typically thousands of vendored files here
 set wildignore+=tmp
+
+set wildmenu                      " show options as list when switching buffers etc
+set wildmode=longest:full,full    " shell-like autocomplete to unambiguous portion
