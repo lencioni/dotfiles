@@ -6,6 +6,6 @@ PATH=$HOME/bin
 PATH=$PATH:$HOME/.shells/bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$SYSTEM_PATH
-PATH=$PATH:~/.rbenv/bin
-PATH=$PATH:~/.rbenv/shims
+PATH=$PATH:$HOME/.rbenv/bin
+PATH=$PATH:$HOME/.rbenv/shims
 export PATH
