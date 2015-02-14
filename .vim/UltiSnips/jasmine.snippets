@@ -2,7 +2,13 @@ global !p
 from snippet_helpers import *
 endglobal
 
-snippet des "describe() block" b
+snippet desf "describe('...', function() { ... });" b
+describe('${1}', function() {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet des "describe('...', () => { ... });" b
 describe('${1}', () => {
 	${0:${VISUAL}}
 });
