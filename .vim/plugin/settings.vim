@@ -23,6 +23,7 @@ set hlsearch                      " highlight search strings
 set ignorecase                    " ignore case when searching
 set incsearch                     " incremental search
 set laststatus=2                  " always show the statusline
+set lazyredraw                    " don't redraw while executing macros, etc.
 set nojoinspaces                  " don't autoinsert two spaces after '.', '?', '!' for join command
 set number                        " enable number lines
 set scrolloff=6                   " maintain 6 lines of context around the cursor
