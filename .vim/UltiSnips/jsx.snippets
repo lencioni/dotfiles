@@ -3,7 +3,7 @@ from snippet_helpers import *
 endglobal
 
 snippet cc "createClass" b
-var ${1:`!p snip.rv = pascal_case_basename(snip.basename)`} = React.createClass({
+const ${1:`!p snip.rv = pascal_case_basename(snip.basename)`} = React.createClass({
 	/**
 	 * @return {Object}
 	 */
@@ -86,8 +86,8 @@ getInitialState: function() {
 },
 endsnippet
 
-snippet vpt "var PropTypes = React.PropTypes;" b
-var PropTypes = React.PropTypes;
+snippet cpt "const { PropTypes } = React;" b
+const { PropTypes } = React;
 endsnippet
 
 snippet pt "propTypes" b
