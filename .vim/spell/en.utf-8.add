@@ -12,3 +12,5 @@ dropdown
 aggregator
 refactored
 inline
+memoization
+destructuring
