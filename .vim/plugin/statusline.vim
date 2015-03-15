@@ -1,7 +1,6 @@
 " cf the default statusline: %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 if has('statusline')
-  set statusline=\     " space
-  set statusline+=%n   " buffer number
+  set statusline=%n    " buffer number
   set statusline+=:    " (literal)
   set statusline+=%<   " truncation point, if not enough width available
   set statusline+=%f   " relative path to file
@@ -33,7 +32,6 @@ if has('statusline')
   set statusline+=\    " space
   set statusline+=%c   " current column number
   set statusline+=%V   " current virtual column number (-n), if different
-  set statusline+=\    " space
 
   function! statusline#Ft()
     if strlen(&ft)
