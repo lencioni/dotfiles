@@ -4,12 +4,7 @@
 
 " Autocorrect my common typos
 iab Connectiosn Connections
-iab connectiosn connections
 iab Cound Could
-iab cound could
-iab functino function
-iab indentatino indentation
-iab optiosn options
 iab SOme Some
 iab THat That
 iab THe The
@@ -19,3 +14,9 @@ iab THese These
 iab THis This
 iab THose Those
 iab WHen When
+iab connectiosn connections
+iab cound could
+iab functino function
+iab indentatino indentation
+iab optiosn options
+iab taht that
