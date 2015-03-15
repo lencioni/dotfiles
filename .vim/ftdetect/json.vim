@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufRead .jscsrc,.jshintrc set ft=yaml
+autocmd BufNewFile,BufRead .jscsrc,.jshintrc set ft=json
