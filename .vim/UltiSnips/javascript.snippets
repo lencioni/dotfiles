@@ -118,6 +118,9 @@ endsnippet
 snippet re "require" b
 const `!p
 def formatVariableName(path):
+	if path == 'react/addons':
+		return 'React'
+
 	lastPart = path.split('/')[-1]
 	if lastPart == 'underscore':
 		return '_'
