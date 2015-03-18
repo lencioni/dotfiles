@@ -11,7 +11,7 @@ windows:
       layout: main-vertical
       panes:
         - HOT_MODULES=1 APP_HOST=localhost script/start-webpack
-        - bin/rails server -b 0.0.0.0
+        - HOT_MODULES=1 APP_HOST=localhost bin/rails server -b 0.0.0.0
         - bundle exec sidekiq
         - jasmine:
           - kill -KILL `lsof -t -i :8888`
