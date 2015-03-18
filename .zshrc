@@ -16,6 +16,11 @@ zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
 compinit
 
+# Source tmuxinator completion
+if [[ -s "${ZDOTDIR:-$HOME}/.bin/tmuxinator.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.bin/tmuxinator.zsh"
+fi
+
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"

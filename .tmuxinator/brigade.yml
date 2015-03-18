@@ -1,0 +1,19 @@
+# ~/.tmuxinator/brigade.yml
+---
+name: brigade
+root: ~/brigade
+startup_window: vim
+windows:
+  - server:
+      layout: main-vertical
+      panes:
+        - foreman:
+          - kill -KILL `lsof -t -i :8888`
+          - mysql.server start &
+          - redis-server --daemonize yes
+          - HOT_MODULES=1 APP_HOST=localhost foreman start
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim "+:CommandT"
+        -

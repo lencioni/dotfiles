@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
 git submodule update --init --recursive
 cd ~
 ln -s dotfiles/.ackrc .
@@ -10,6 +15,7 @@ ln -s dotfiles/.rspec .
 ln -s dotfiles/.shells .
 ln -s dotfiles/.slate .
 ln -s dotfiles/.tmux.conf .
+ln -s dotfiles/.tmuxinator .
 ln -s dotfiles/.vimrc .
 ln -s dotfiles/.vim .
 
