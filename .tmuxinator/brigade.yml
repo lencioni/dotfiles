@@ -2,16 +2,20 @@
 ---
 name: brigade
 root: ~/brigade
+pre:
+  - redis-server --daemonize yes
+  - mysql.server start &
 startup_window: vim
 windows:
   - server:
       layout: main-vertical
       panes:
-        - foreman:
+        - HOT_MODULES=1 APP_HOST=localhost script/start-webpack
+        - bin/rails server -b 0.0.0.0
+        - bundle exec sidekiq
+        - jasmine:
           - kill -KILL `lsof -t -i :8888`
-          - mysql.server start &
-          - redis-server --daemonize yes
-          - HOT_MODULES=1 APP_HOST=localhost foreman start
+          - bin/rake jasmine:server
   - vim:
       layout: main-vertical
       panes:
