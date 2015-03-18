@@ -1,6 +1,8 @@
+#!/usr/bin/env zsh
+
 # Set USER if it does not exist.
 # https://github.com/sorin-ionescu/prezto/pull/605
-if [ !$USER ] ; then
+if [ ! "$USER" ] ; then
   export USER="${USER:-$(whoami)}"
 fi
 

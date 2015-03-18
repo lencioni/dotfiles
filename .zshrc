@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 #
 # Basic configuration
 #
@@ -10,7 +12,7 @@ setopt nomatch
 setopt nonomatch # unmatched patterns are left unchanged
 
 zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '$HOME/.zshrc'
+zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
 compinit
 
@@ -40,6 +42,6 @@ fi
 
 if [ $DOTFILES ] ; then
   for f in $DOTFILES/shell/* ; do
-    source $f
+    source "$f"
   done
 fi
