@@ -12,10 +12,10 @@ windows:
       panes:
         - HOT_MODULES=1 APP_HOST=localhost script/start-webpack
         - HOT_MODULES=1 APP_HOST=localhost bin/rails server -b 0.0.0.0
-        - bundle exec sidekiq
+        - HOT_MODULES=1 APP_HOST=localhost bundle exec sidekiq
         - jasmine:
           - kill -KILL `lsof -t -i :8888`
-          - bin/rake jasmine:server
+          - HOT_MODULES=1 APP_HOST=localhost bin/rake jasmine:server
   - vim:
       layout: main-vertical
       panes:
