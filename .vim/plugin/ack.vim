@@ -60,12 +60,12 @@ function! Acks(command)
 
   " Syntastic makes saving slow, and since we aren't looking at the files to see
   " the warnings, we want to disable it when running through the files.
-  execute ':SyntasticToggleMode'
+  SyntasticToggleMode
 
   execute 'argdo' '%s' . a:command . 'ge | update'
 
   " Re-enable syntastic.
-  execute ':SyntasticToggleMode'
+  SyntasticToggleMode
 endfunction
 
 command! -nargs=+ -complete=file Ack call AckGrep(<q-args>)
