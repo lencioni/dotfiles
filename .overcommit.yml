@@ -15,9 +15,32 @@
 #
 # Uncomment the following lines to make the configuration take effect.
 
+CommitMsg:
+  HardTabs:
+    enabled: true
+
 PreCommit:
   HardTabs:
+    enabled: true
     exclude:
       - .gitconfig
       - .gitmodules
       - .vim/UltiSnips/*
+
+  JsonSyntax:
+    enabled: true
+
+  Pep8:
+    enabled: true
+
+  ShellCheck:
+    enabled: true
+
+  XmlLint:
+    enabled: true
+
+  XmlSyntax:
+    enabled: true
+
+  YamlSyntax:
+    enabled: true
