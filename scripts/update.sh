@@ -1,3 +1,5 @@
+#!/bin/sh
+
 set -e
 
 git submodule foreach git checkout master
