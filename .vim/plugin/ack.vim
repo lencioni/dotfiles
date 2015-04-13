@@ -11,8 +11,10 @@ if !empty(s:ackprg)
   set grepformat=%f:%l:%c:%m
 endif
 
-autocmd QuickFixCmdPost [^l]* nested cw
-autocmd QuickFixCmdPost l* nested lw
+augroup LencioniAck
+  autocmd QuickFixCmdPost [^l]* nested cw
+  autocmd QuickFixCmdPost l* nested lw
+augroup END
 
 function! AckGrep(command)
   if empty(s:ackprg)
@@ -48,11 +50,11 @@ endfunction
 " way for mnemonics, as it will most often be preceded by an :Ack invocation.)
 function! Acks(command)
   if match(a:command, '\v^/.+/.*/$') == -1 " crude sanity check
-    throw "Expected a substitution expression (/foo/bar/); got: " . a:command
+    throw 'Expected a substitution expression (/foo/bar/); got: ' . a:command
   endif
 
   let l:filenames = QuickfixFilenames()
-  if l:filenames == ''
+  if l:filenames ==# ''
     throw 'Quickfix filenames must be present, but there are none'
   endif
 

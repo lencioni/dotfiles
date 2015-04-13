@@ -1,11 +1,11 @@
 " Remove trailing whitespace on save
-augroup RemoveTrailingWhitespace
+augroup LencioniRemoveTrailingWhitespace
   autocmd!
   autocmd BufWritePre * :%s/\s\+$//e
 augroup END
 
 " Automatically reload vimrc when it's saved
-augroup AutoReloadVimRC
+augroup LencioniAutoReloadVimRC
   autocmd!
   autocmd BufWritePost $MYVIMRC so $MYVIMRC
 augroup END

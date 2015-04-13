@@ -1,17 +1,17 @@
 " terminal-specific magic
-let s:iterm   = exists('$ITERM_PROFILE') || filereadable(expand("~/.vim/.assume-iterm"))
-let s:screen  = &term =~ 'screen'
+let s:iterm   = exists('$ITERM_PROFILE') || filereadable(expand('~/.vim/.assume-iterm'))
+let s:screen  = &term =~# 'screen'
 let s:tmux    = exists('$TMUX')
-let s:xterm   = &term =~ 'xterm'
+let s:xterm   = &term =~# 'xterm'
 
 function! s:EscapeEscapes(string)
   " double each <Esc>
-  return substitute(a:string, "\<Esc>", "\<Esc>\<Esc>", "g")
+  return substitute(a:string, "\<Esc>", "\<Esc>\<Esc>", 'g')
 endfunction
 
 function! s:TmuxWrap(string)
   if strlen(a:string) == 0
-    return ""
+    return ''
   end
 
   let tmux_begin  = "\<Esc>Ptmux;"
@@ -40,7 +40,10 @@ if has('mouse')
     set ttymouse=xterm2
   endif
 endif
-autocmd FocusGained * checktime
+
+augroup LencioniTerm
+  autocmd FocusGained * checktime
+augroup END
 
 " enable focus reporting on entering Vim
 let &t_ti .= "\e[?1004h"
