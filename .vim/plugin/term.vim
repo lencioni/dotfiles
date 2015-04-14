@@ -42,6 +42,7 @@ if has('mouse')
 endif
 
 augroup LencioniTerm
+  autocmd!
   autocmd FocusGained * checktime
 augroup END
 

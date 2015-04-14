@@ -12,6 +12,7 @@ if !empty(s:ackprg)
 endif
 
 augroup LencioniAck
+  autocmd!
   autocmd QuickFixCmdPost [^l]* nested cw
   autocmd QuickFixCmdPost l* nested lw
 augroup END
