@@ -8,6 +8,7 @@ cd ~
 ln -s dotfiles/.ackrc .
 ln -s dotfiles/.agignore .
 ln -s dotfiles/.ctags .
+ln -s dotfiles/.gemrc .
 ln -s dotfiles/.gitattributes .
 ln -s dotfiles/.gitconfig .
 ln -s dotfiles/.gitexcludes .
