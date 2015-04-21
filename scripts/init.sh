@@ -5,30 +5,29 @@ set -e
 
 git submodule update --init --recursive
 cd ~
-ln -s dotfiles/.ackrc .
-ln -s dotfiles/.agignore .
-ln -s dotfiles/.ctags .
-ln -s dotfiles/.gemrc .
-ln -s dotfiles/.gitattributes .
-ln -s dotfiles/.gitconfig .
-ln -s dotfiles/.gitexcludes .
-ln -s dotfiles/.rdebugrc .
-ln -s dotfiles/.rspec .
-ln -s dotfiles/.shells .
-ln -s dotfiles/.slate .
-ln -s dotfiles/.tmux.conf .
-ln -s dotfiles/.tmuxinator .
-ln -s dotfiles/.vimrc .
-ln -s dotfiles/.vim .
+ln -sFi dotfiles/.ackrc .
+ln -sFi dotfiles/.agignore .
+ln -sFi dotfiles/.ctags .
+ln -sFi dotfiles/.gemrc .
+ln -sFi dotfiles/.gitattributes .
+ln -sFi dotfiles/.gitconfig .
+ln -sFi dotfiles/.gitexcludes .
+ln -sFi dotfiles/.rdebugrc .
+ln -sFi dotfiles/.rspec .
+ln -sFi dotfiles/.shells .
+ln -sFi dotfiles/.slate .
+ln -sFi dotfiles/.tmux.conf .
+ln -sFi dotfiles/.tmuxinator .
+ln -sFi dotfiles/.vimrc .
+ln -sFi dotfiles/.vim .
 
-ln -s dotfiles/.zprezto .
-ln -s dotfiles/.zpreztorc .
-ln -s dotfiles/.zprofile .
-rm .zshrc
-ln -s dotfiles/.zshrc .
-ln -s .zprezto/runcoms/zlogin .zlogin
-ln -s .zprezto/runcoms/zlogout .zlogout
-ln -s .zprezto/runcoms/zshenv .zshenv
+ln -sFi dotfiles/.zprezto .
+ln -sFi dotfiles/.zpreztorc .
+ln -sFi dotfiles/.zprofile .
+ln -sFi dotfiles/.zshrc .
+ln -sFi .zprezto/runcoms/zlogin .zlogin
+ln -sFi .zprezto/runcoms/zlogout .zlogout
+ln -sFi .zprezto/runcoms/zshenv .zshenv
 
 cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts
 cp dotfiles/extras/Inconsolata-dz-Powerline.otf ~/Library/Fonts
