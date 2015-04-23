@@ -78,4 +78,4 @@
 	reword = commit --amend --only --
 
 [diff]
-	algorithm = patience
+	algorithm = histogram
