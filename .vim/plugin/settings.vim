@@ -26,6 +26,7 @@ set laststatus=2                  " always show the statusline
 set lazyredraw                    " don't redraw while executing macros, etc.
 set nojoinspaces                  " don't autoinsert two spaces after '.', '?', '!' for join command
 set number                        " enable number lines
+set path+=app/assets/javascripts  " improve file finding for JS files in Rails projects
 set scrolloff=6                   " maintain 6 lines of context around the cursor
 set shiftround                    " round indent to shiftwidth when using > and <
 set shiftwidth=2                  " spaces per tab (when shifting)
