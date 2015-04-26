@@ -28,7 +28,7 @@ nnoremap <leader>w :w<CR>
 nnoremap Q @q
 
 " <esc> -- Clear search highlighting by pressing <esc>
-nnoremap <esc> :nohlsearch<return><esc>
+nnoremap <silent> <esc> :nohlsearch<return><esc>
 
 "
 " Insert mode mappings
