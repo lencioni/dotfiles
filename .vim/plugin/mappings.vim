@@ -36,3 +36,11 @@ nnoremap <silent> <esc> :nohlsearch<return><esc>
 
 " jj -- Easily escape from INSERT mode
 inoremap jj <Esc>
+
+"
+" Command mode mappings
+"
+
+" Bash-like keys for the command line
+cnoremap <C-A> <Home>
+cnoremap <C-E> <End>
