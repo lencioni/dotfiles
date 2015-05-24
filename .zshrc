@@ -45,8 +45,6 @@ if [ -d ~/dotfiles ] ; then
   export DOTFILES=~/dotfiles
 fi
 
-if [ $DOTFILES ] ; then
-  for f in $DOTFILES/shell/* ; do
-    source "$f"
-  done
-fi
+for f in ~/.shells/* ; do
+  source "$f"
+done
