@@ -7,7 +7,7 @@ const ${1:`!p snip.rv = pascal_case_basename(snip.basename)`} = React.createClas
 	/**
 	 * @return {Object}
 	 */
-	render: function() {
+	render() {
 		return (
 			$0
 		);
@@ -18,7 +18,7 @@ module.exports = $1;
 endsnippet
 
 snippet cdm "componentDidMount" b
-componentDidMount: function() {
+componentDidMount() {
 	$0
 },
 endsnippet
@@ -28,13 +28,13 @@ snippet cdu "componentDidUpdate" b
  * @param {Object} prevProps
  * @param {Object} prevState
  */
-componentDidUpdate: function(prevProps, prevState) {
+componentDidUpdate(prevProps, prevState) {
 	$0
 },
 endsnippet
 
 snippet cwm "componentWillMount" b
-componentWillMount: function() {
+componentWillMount() {
 	$0
 },
 endsnippet
@@ -43,13 +43,13 @@ snippet cwrp "componentWillReceiveProps" b
 /**
  * @param {Object} nextProps
  */
-componentWillReceiveProps: function(nextProps) {
+componentWillReceiveProps(nextProps) {
 	$0
 },
 endsnippet
 
 snippet cwum "componentWillUnmount" b
-componentWillUnmount: function() {
+componentWillUnmount() {
 	$0
 },
 endsnippet
@@ -59,7 +59,7 @@ snippet cwu "componentWillUpdate" b
  * @param {Object} nextProps
  * @param {Object} nextState
  */
-componentWillUpdate: function(nextProps, nextState) {
+componentWillUpdate(nextProps, nextState) {
 	$0
 },
 endsnippet
@@ -68,7 +68,7 @@ snippet gdp "getDefaultProps" b
 /**
  * @return {Object}
  */
-getDefaultProps: function() {
+getDefaultProps() {
 	return {
 		$0
 	};
@@ -79,7 +79,7 @@ snippet gis "getInitialState" b
 /**
  * @return {Object}
  */
-getInitialState: function() {
+getInitialState() {
 	return {
 		$0
 	};
@@ -107,7 +107,7 @@ snippet scu "shouldComponentUpdate" b
  * @param {Object} nextState
  * @return {boolean}
  */
-shouldComponentUpdate: function(nextProps, nextState) {
+shouldComponentUpdate(nextProps, nextState) {
 	return ${1:true};
 },
 endsnippet
