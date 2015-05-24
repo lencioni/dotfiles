@@ -1,2 +1,4 @@
 # Compiled Python bytecode
 *.pyc
+
+.vim/.base16
