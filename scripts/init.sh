@@ -29,6 +29,11 @@ ln -sFi .zprezto/runcoms/zlogin .zlogin
 ln -sFi .zprezto/runcoms/zlogout .zlogout
 ln -sFi .zprezto/runcoms/zshenv .zshenv
 
+mkdir -p ~/bin
+cd ~/bin
+ln -sFi ../dotfiles/bin/npm-exec-eslint .
+cd -
+
 cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts
 cp dotfiles/extras/Inconsolata-dz-Powerline.otf ~/Library/Fonts
 

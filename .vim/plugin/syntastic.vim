@@ -21,9 +21,10 @@ let g:syntastic_warning_symbol       = '⚠'
 let g:syntastic_style_error_symbol   = '⚠'
 let g:syntastic_style_warning_symbol = '⚠'
 
-let g:syntastic_haml_checkers        = ['haml_lint']
-let g:syntastic_javascript_checkers  = ['eslint']
-let g:syntastic_json_checkers        = ['jsonlint']
-let g:syntastic_ruby_checkers        = ['rubocop']
-let g:syntastic_scss_checkers        = ['scss_lint']
-let g:syntastic_vim_checkers         = ['vint']
+let g:syntastic_haml_checkers          = ['haml_lint']
+let g:syntastic_javascript_checkers    = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'npm-exec-eslint'
+let g:syntastic_json_checkers          = ['jsonlint']
+let g:syntastic_ruby_checkers          = ['rubocop']
+let g:syntastic_scss_checkers          = ['scss_lint']
+let g:syntastic_vim_checkers           = ['vint']

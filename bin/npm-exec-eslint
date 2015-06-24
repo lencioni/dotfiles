@@ -1,0 +1,2 @@
+#! /bin/sh
+PATH=$(npm bin):$PATH eslint "$@"
