@@ -135,5 +135,5 @@ snip.rv = formatVariableName(t[1])
 endsnippet
 
 snippet me "module.exports" b
-module.exports = ${1:`!p snip.rv = pascal_case_basename(snip.basename)`};$0
+module.exports = ${1:`!p snip.rv = path_to_component_name(path, pascal_case_basename)`};$0
 endsnippet
