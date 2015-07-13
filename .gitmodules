@@ -104,3 +104,6 @@
 [submodule ".vim/bundle/ferret"]
 	path = .vim/bundle/ferret
 	url = https://github.com/wincent/ferret.git
+[submodule ".vim/bundle/loupe"]
+	path = .vim/bundle/loupe
+	url = https://github.com/wincent/loupe.git
