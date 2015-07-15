@@ -28,3 +28,12 @@ let g:syntastic_json_checkers          = ['jsonlint']
 let g:syntastic_ruby_checkers          = ['rubocop']
 let g:syntastic_scss_checkers          = ['scss_lint']
 let g:syntastic_vim_checkers           = ['vint']
+
+" Disable Syntastic when Ferret is writing files for speed.
+if has('autocmd')
+  augroup LencioniFerretWrite
+    autocmd!
+    autocmd User FerretWillWrite call SyntasticToggleMode()
+    autocmd User FerretDidWrite call SyntasticToggleMode()
+  augroup END
+endif
