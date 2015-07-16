@@ -1,7 +1,7 @@
 set autoindent                      " keep indentation when starting new lines
 set autoread                        " autoload external changes unless unsaved changes
 set backspace=indent,start,eol      " allow unrestricted backspacing in insert mode
-set backupdir=~/.vim/tmp/backup//,. " keep backup files out of the way, trailing // stores full dir
+set backupdir=~/.vim/tmp/backup,.   " keep backup files out of the way
 
 if exists('+colorcolumn')
   set colorcolumn=+0                " Vertical line at `textwidth` characters
@@ -47,7 +47,7 @@ set tabstop=2                       " spaces per tab
 set textwidth=80                    " automatically hard wrap
 
 if has('persistent_undo')
-  set undodir=~/.vim/tmp/undo//,.   " keep undo files out of the way, trailing // stores full dir
+  set undodir=~/.vim/tmp/undo,.     " keep undo files out of the way
   set undofile                      " actually use undo files
 endif
 
