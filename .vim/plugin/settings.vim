@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 set autoindent                      " keep indentation when starting new lines
 set autoread                        " autoload external changes unless unsaved changes
 set backspace=indent,start,eol      " allow unrestricted backspacing in insert mode
@@ -24,6 +26,8 @@ set ignorecase                      " ignore case when searching
 set incsearch                       " incremental search
 set laststatus=2                    " always show the statusline
 set lazyredraw                      " don't redraw while executing macros, etc.
+set list                            " show whitespace
+set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
 set nojoinspaces                    " don't autoinsert two spaces after '.', '?', '!' for join command
 set number                          " enable number lines
 set path+=app/assets/javascripts    " improve file finding for JS files in Rails projects
