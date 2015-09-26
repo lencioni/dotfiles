@@ -17,7 +17,7 @@ def _convert_camel_case(string):
 
 
 def _clean_basename(basename):
-    return re.sub('(_spec|-test)$', '', basename or 'ModuleName')
+    return re.sub('(_spec|-test|-diffux)$', '', basename or 'ModuleName')
 
 
 # If path ends in `index.jsx`, this function will return the PascalCased
@@ -27,7 +27,7 @@ def _clean_basename(basename):
 def path_to_component_name(path, case_fn):
     dirname, filename = os.path.split(path)
     basename = os.path.splitext(filename)[0]
-    if basename == 'index' or basename == 'index-test':
+    if basename in ['index', 'index-test', 'index-diffux']:
         # Pop the last directory name off the dirname
         return case_fn(_clean_basename(os.path.basename(dirname)))
     else:
