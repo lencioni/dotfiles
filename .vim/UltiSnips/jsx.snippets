@@ -111,3 +111,30 @@ shouldComponentUpdate(nextProps, nextState) {
 	return ${1:true};
 },
 endsnippet
+
+snippet <> "<Component>" b
+<${1:`!p snip.rv = path_to_component_name(path, pascal_case_basename)`}>
+	${0:${VISUAL}}
+</$1>
+endsnippet
+
+snippet < "<Component />" b
+<${1:`!p snip.rv = path_to_component_name(path, pascal_case_basename)`} ${0}/>
+endsnippet
+
+# DOM
+
+snippet div "<div>" b
+<div$1>
+	${0:${VISUAL}}
+</div>
+endsnippet
+
+# Diffux-CI
+snippet dd "diffux.define" b
+diffux.define('${1:<`!p snip.rv = path_to_component_name(path, pascal_case_basename)`>}', function() {
+	return Utils.renderAttached(
+		${0:${VISUAL}}
+	);
+}, { viewports: [${2:'small', 'medium'}] });
+endsnippet
