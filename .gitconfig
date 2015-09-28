@@ -9,6 +9,9 @@
 [color]
 	ui = auto
 
+[color "status"]
+	untracked = blue
+
 [color "diff-highlight"]
 	oldNormal = "red bold"
 	oldHighlight = "red bold 52"
