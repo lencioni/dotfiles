@@ -1,4 +1,4 @@
-ssh-reagent () {
+ssh-reagent() {
   for agent in /tmp/ssh-*/agent.*; do
     export SSH_AUTH_SOCK=$agent
     if ssh-add -l &> /dev/null; then
@@ -11,7 +11,7 @@ ssh-reagent () {
   return 1
 }
 
-ssh-ensure-agent () {
+ssh-ensure-agent() {
   if ! ssh-add -l &> /dev/null; then
     ssh-reagent &> /dev/null
   fi
