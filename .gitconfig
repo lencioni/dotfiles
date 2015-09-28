@@ -85,6 +85,9 @@
 	# Reuse recorded resolution of conflicted merges
 	# see `man git-rerere'
 
+[status]
+	submodulesummary = true
+
 [user]
 	gerrit = joe.lencioni
 	email = joe.lencioni@brigade.com
