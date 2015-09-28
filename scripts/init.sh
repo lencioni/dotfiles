@@ -32,6 +32,7 @@ ln -sFi .zprezto/runcoms/zshenv .zshenv
 mkdir -p ~/bin
 cd ~/bin
 ln -sFi ../dotfiles/bin/npm-exec-eslint .
+ln -sFi "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" .
 cd -
 
 cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts

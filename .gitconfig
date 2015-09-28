@@ -9,6 +9,12 @@
 [color]
 	ui = auto
 
+[color "diff-highlight"]
+	oldNormal = "red bold"
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+
 [pager]
 	show-branch = true
 
@@ -26,6 +32,7 @@
 	editor = vim
 	# global gitignore, useful for hiding editor files
 	excludesfile = ~/.gitexcludes
+	pager = zsh -c 'diff-highlight | less -iFMRSX' -
 
 [help]
 	autocorrect = 10
