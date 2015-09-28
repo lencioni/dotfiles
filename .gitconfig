@@ -71,6 +71,7 @@
 
 [pager]
 	show-branch = true
+	status = true # Use pager for `git status`
 
 [push]
 	default = upstream
