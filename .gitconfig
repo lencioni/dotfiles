@@ -2,10 +2,13 @@
 	gerrit = joe.lencioni
 	email = joe.lencioni@brigade.com
 	name = Joe Lencioni
+
 [log]
 	decorate = short
+
 [color]
 	ui = auto
+
 [pager]
 	show-branch = true
 
@@ -26,7 +29,7 @@
 
 [help]
 	autocorrect = 10
-	# elcalafate:git derwiki$ git lgo
+	# $ git lgo
 	# WARNING: You called a Git command named 'lgo', which does not exist.
 	# Continuing under the assumption that you meant 'log'
 	# in 1.0 seconds automatically...
@@ -44,9 +47,6 @@
 	# e14d631 (HEAD, origin/master, origin/HEAD, master) Merge branch 'maint'
 	# 0f64a5a Merge branch 'rr/misc-fixes'
 	# ef563de convert.c: Fix return type of git_path_check_eol()
-	# 1e501a7 (origin/maint) documentation fix: git difftool uses diff tools, not merge tools.
-	# 05bab3e config.c: Fix a static buffer overwrite bug by avoiding mkpath()
-	# 3a81f33 t5501-*.sh: Fix url passed to clone in setup test
 
 	graph = log --oneline --graph
 	# *   e14d631 (HEAD, origin/master, origin/HEAD, master) Merge branch 'maint'
@@ -56,7 +56,6 @@
 	# |\ \
 	# | * | ef563de convert.c: Fix return type of git_path_check_eol()
 	# * | | 05bab3e config.c: Fix a static buffer overwrite bug by avoiding mkpath()
-	# * | | 3a81f33 t5501-*.sh: Fix url passed to clone in setup test
 
 	last = log -1
 	# show the commit message of HEAD
