@@ -1,52 +1,3 @@
-[user]
-	gerrit = joe.lencioni
-	email = joe.lencioni@brigade.com
-	name = Joe Lencioni
-
-[log]
-	decorate = short
-
-[color]
-	ui = auto
-
-[color "status"]
-	untracked = blue
-
-[color "diff-highlight"]
-	oldNormal = "red bold"
-	oldHighlight = "red bold 52"
-	newNormal = "green bold"
-	newHighlight = "green bold 22"
-
-[pager]
-	show-branch = true
-
-[rebase]
-	autosquash = true
-	# for fixup hotness later
-
-[rerere]
-	enabled = true
-	# Reuse recorded resolution of conflicted merges
-	# see `man git-rerere'
-
-[core]
-	attributesfile = ~/.gitattributes
-	editor = vim
-	# global gitignore, useful for hiding editor files
-	excludesfile = ~/.gitexcludes
-	pager = zsh -c 'diff-highlight | less -iFMRSX' -
-
-[help]
-	autocorrect = 10
-	# $ git lgo
-	# WARNING: You called a Git command named 'lgo', which does not exist.
-	# Continuing under the assumption that you meant 'log'
-	# in 1.0 seconds automatically...
-
-[push]
-	default = upstream
-
 [alias]
 	st = status
 	ci = commit
@@ -86,5 +37,54 @@
 	# requires Git 1.7.11.3 or later
 	reword = commit --amend --only --
 
+[color]
+	ui = auto
+
+[color "diff-highlight"]
+	oldNormal = "red bold"
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+
+[color "status"]
+	untracked = blue
+
+[core]
+	attributesfile = ~/.gitattributes
+	editor = vim
+	# global gitignore, useful for hiding editor files
+	excludesfile = ~/.gitexcludes
+	pager = zsh -c 'diff-highlight | less -iFMRSX' -
+
 [diff]
 	algorithm = histogram
+
+[help]
+	autocorrect = 10
+	# $ git lgo
+	# WARNING: You called a Git command named 'lgo', which does not exist.
+	# Continuing under the assumption that you meant 'log'
+	# in 1.0 seconds automatically...
+
+[log]
+	decorate = short
+
+[pager]
+	show-branch = true
+
+[push]
+	default = upstream
+
+[rebase]
+	autosquash = true
+	# for fixup hotness later
+
+[rerere]
+	enabled = true
+	# Reuse recorded resolution of conflicted merges
+	# see `man git-rerere'
+
+[user]
+	gerrit = joe.lencioni
+	email = joe.lencioni@brigade.com
+	name = Joe Lencioni
