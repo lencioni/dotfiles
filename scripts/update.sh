@@ -14,7 +14,7 @@ cd -
 cd .vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 echo 'Installing YouCompleteMe...'
-./install.sh
+./install.py
 cd -
 
 # Install Command-T
