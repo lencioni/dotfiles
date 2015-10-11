@@ -32,7 +32,7 @@
 	su = submodule update --init
 	# update or initialize each submodule
 
-	refresh = !ssh-add -l && STASH=$(git stash) && git fetch && git rebase origin/master && test \"$STASH\" != \"No local changes to save\" && git stash pop
+	refresh = !STASH=$(git stash) && git fetch && git rebase origin/master && test \"$STASH\" != \"No local changes to save\" && git stash pop
 
 	# requires Git 1.7.11.3 or later
 	reword = commit --amend --only --
