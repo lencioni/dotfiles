@@ -37,6 +37,9 @@
 	# requires Git 1.7.11.3 or later
 	reword = commit --amend --only --
 
+	rb = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
+
+
 [color]
 	ui = auto
 
