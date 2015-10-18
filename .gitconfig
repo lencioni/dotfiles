@@ -57,7 +57,12 @@
 	editor = vim
 	# global gitignore, useful for hiding editor files
 	excludesfile = ~/.gitexcludes
-	pager = zsh -c 'diff-highlight | less -iFMRSX' -
+	# -i ignore case in searches
+	# -F auto exit if everything fits in one screen
+	# -M verbose prompt
+	# -R output ANSI color escape sequences in raw form
+	# -X disable sending termcap init and deinit to terminal
+	pager = zsh -c 'diff-highlight | less -iFMRX' -
 
 [diff]
 	algorithm = histogram
