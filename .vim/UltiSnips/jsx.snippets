@@ -132,7 +132,7 @@ endsnippet
 # Diffux-CI
 snippet dd "diffux.define" b
 diffux.define('${1:<`!p snip.rv = path_to_component_name(path, pascal_case_basename)`>}', function() {
-	return Utils.renderAttached(
+	return Utils.renderAttachedAndGetNode(
 		${0:${VISUAL}}
 	);
 }, { viewports: [${2:'small', 'medium'}] });
