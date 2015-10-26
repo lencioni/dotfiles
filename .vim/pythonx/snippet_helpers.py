@@ -39,4 +39,6 @@ def complete(text, opts):
         opts = [m[len(text):] for m in opts if m.startswith(text)]
     if len(opts) == 1:
         return opts[0]
-    return '(' + '|'.join(opts) + ')'
+    if len(opts) > 0:
+        return '(' + '|'.join(opts) + ')'
+    return ''
