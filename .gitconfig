@@ -85,8 +85,8 @@
 	default = upstream
 
 [rebase]
-	autosquash = true
-	# for fixup hotness later
+	autoSquash = true
+	autoStash = true
 
 [rerere]
 	enabled = true
