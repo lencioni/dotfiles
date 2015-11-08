@@ -96,3 +96,5 @@ symlinked
 rsync
 unprefixed
 polyfill
+stringifying
+stringify
