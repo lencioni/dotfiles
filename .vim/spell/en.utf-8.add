@@ -98,3 +98,5 @@ unprefixed
 polyfill
 stringifying
 stringify
+Ellipsize
+ellipsized
