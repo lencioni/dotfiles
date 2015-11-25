@@ -5,6 +5,7 @@
 " Autocorrect my common typos
 iab Connectiosn Connections
 iab Cound Could
+iab GEt Get
 iab Optiosn Options
 iab SInce Since
 iab SOme Some
