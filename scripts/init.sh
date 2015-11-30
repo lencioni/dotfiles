@@ -3,6 +3,9 @@
 # Exit immediately if a command exits with a non-zero status.
 set -e
 
+# Set default shell to zsh
+chsh -s /bin/zsh
+
 git submodule update --init --recursive
 cd ~
 ln -sFi dotfiles/.ackrc .
