@@ -15,10 +15,10 @@ ln -sFi dotfiles/.gemrc .
 ln -sFi dotfiles/.gitattributes .
 ln -sFi dotfiles/.gitconfig .
 ln -sFi dotfiles/.gitexcludes .
+ln -sFi dotfiles/.hammerspoon .
 ln -sFi dotfiles/.rdebugrc .
 ln -sFi dotfiles/.rspec .
 ln -sFi dotfiles/.shells .
-ln -sFi dotfiles/.slate .
 ln -sFi dotfiles/.tmux.conf .
 ln -sFi dotfiles/.tmuxinator .
 ln -sFi dotfiles/.vimrc .
