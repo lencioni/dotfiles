@@ -19,11 +19,11 @@ patch_terminfo() {
   tic -o dry-run "$T.terminfo"
   infocmp -A dry-run "$T" > "$T.terminfo.new"
   echo ----- "$T" -----
-  diff -u "$T.terminfo.{original,new}" || true
+  diff -u "$T.terminfo.original" "$T.terminfo.new" || true
   echo ----- "$T" -----
   tic "$T.terminfo"
 }
 
-patch_terminfo screen-256color
-patch_terminfo screen
+patch_terminfo tmux
+patch_terminfo tmux-256color
 patch_terminfo xterm-256color
