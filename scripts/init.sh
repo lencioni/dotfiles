@@ -20,7 +20,6 @@ ln -sFi dotfiles/.rdebugrc .
 ln -sFi dotfiles/.rspec .
 ln -sFi dotfiles/.shells .
 ln -sFi dotfiles/.tmux.conf .
-ln -sFi dotfiles/.tmuxinator .
 ln -sFi dotfiles/.vimrc .
 ln -sFi dotfiles/.vim .
 
