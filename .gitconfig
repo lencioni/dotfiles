@@ -97,6 +97,5 @@
 	submodulesummary = true
 
 [user]
-	gerrit = joe.lencioni
-	email = joe.lencioni@brigade.com
+	email = joe.lencioni@gmail.com
 	name = Joe Lencioni
