@@ -9,3 +9,8 @@ augroup LencioniAutoReloadVimRC
   autocmd!
   autocmd BufWritePost $MYVIMRC so $MYVIMRC
 augroup END
+
+" Automatically rebuild custom dictionary binaries when saving the text versions
+augroup LencioniMkspell
+  autocmd BufWritePost .vim/spell/*.add silent! :mkspell! %
+augroup END
