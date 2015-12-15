@@ -6,6 +6,7 @@
 iab Connectiosn Connections
 iab Cound Could
 iab GEt Get
+iab NOw Now
 iab Optiosn Options
 iab SInce Since
 iab SOme Some
