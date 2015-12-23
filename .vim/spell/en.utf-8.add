@@ -57,6 +57,8 @@ app
 assistive
 asynchronicity
 backend
+backtick
+backticks
 blockquote
 blockquotes
 blog
@@ -128,6 +130,7 @@ requestAnimationFrame
 retrigger
 rsync
 runtimes
+scannable
 screencast
 screencasts
 screenshot
