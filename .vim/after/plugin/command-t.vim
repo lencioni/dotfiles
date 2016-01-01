@@ -19,4 +19,3 @@ endif
 "
 
 nnoremap <leader>f :CommandTFlush<CR>
-nnoremap <leader>g :CommandTTag<CR>
