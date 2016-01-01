@@ -30,6 +30,9 @@ nnoremap Q @q
 " <esc> -- Clear search highlighting by pressing <esc>
 nnoremap <silent> <esc> :nohlsearch<return><esc>
 
+" \j -- import-js import
+nnoremap <unique> <silent> <Leader>j :ImportJSImport<CR>
+
 "
 " Insert mode mappings
 "
