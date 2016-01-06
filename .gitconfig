@@ -39,6 +39,7 @@
 
 	rb = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
 
+	showmsg = log --format=%B -n 1
 
 [color]
 	ui = auto
