@@ -15,7 +15,7 @@ mkdir -p dry-run
 
 patch_terminfo() {
   T=$1
-  infocmp "$T" > "$T.terminfo.original"
+  infocmp "$T" > "$T.terminfo.original" || true
   tic -o dry-run "$T.terminfo"
   infocmp -A dry-run "$T" > "$T.terminfo.new"
   echo ----- "$T" -----
