@@ -65,6 +65,7 @@
 [submodule ".vim/bundle/YouCompleteMe"]
 	path = .vim/bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+	ignore = dirty
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git@github.com:ervandew/supertab.git
