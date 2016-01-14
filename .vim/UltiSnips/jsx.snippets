@@ -3,97 +3,57 @@ from snippet_helpers import *
 endglobal
 
 snippet cc "createClass" b
-const ${1:`!p snip.rv = path_to_component_name(path, pascal_case_basename)`} = React.createClass({
-	/**
-	 * @return {Object}
-	 */
+export default class ${1:`!p snip.rv = path_to_component_name(path,
+pascal_case_basename)`} extends React.Component {
 	render() {
 		return (
 			$0
 		);
 	}
-});
+}
+endsnippet
 
-module.exports = $1;
+snippet con "constructor()" b
+constructor(props) {
+	super(props);
+	$0
+}
 endsnippet
 
 snippet cdm "componentDidMount" b
 componentDidMount() {
 	$0
-},
+}
 endsnippet
 
 snippet cdu "componentDidUpdate" b
-/**
- * @param {Object} prevProps
- * @param {Object} prevState
- */
 componentDidUpdate(prevProps, prevState) {
 	$0
-},
+}
 endsnippet
 
 snippet cwm "componentWillMount" b
 componentWillMount() {
 	$0
-},
+}
 endsnippet
 
 snippet cwrp "componentWillReceiveProps" b
-/**
- * @param {Object} nextProps
- */
 componentWillReceiveProps(nextProps) {
 	$0
-},
+}
 endsnippet
 
 snippet cwum "componentWillUnmount" b
 componentWillUnmount() {
 	$0
-},
+}
 endsnippet
 
 snippet cwu "componentWillUpdate" b
-/**
- * @param {Object} nextProps
- * @param {Object} nextState
- */
 componentWillUpdate(nextProps, nextState) {
 	$0
-},
-endsnippet
-
-snippet gdp "getDefaultProps" b
-/**
- * @return {Object}
- */
-getDefaultProps() {
-	return {
-		$0
-	};
-},
-endsnippet
-
-snippet gis "getInitialState" b
-/**
- * @return {Object}
- */
-getInitialState() {
-	return {
-		$0
-	};
-},
-endsnippet
-
-snippet cpt "const { PropTypes } = React;" b
-const { PropTypes } = React;
-endsnippet
-
-snippet pt "propTypes" b
-propTypes: {
-	$0
-},
+}
 endsnippet
 
 snippet Pt "PropTypes" w
@@ -101,14 +61,9 @@ PropTypes.$1`!p snip.rv=complete(t[1], ['array', 'bool', 'func', 'number', 'obje
 endsnippet
 
 snippet scu "shouldComponentUpdate" b
-/**
- * @param {Object} nextProps
- * @param {Object} nextState
- * @return {boolean}
- */
 shouldComponentUpdate(nextProps, nextState) {
 	return ${1:true};
-},
+}
 endsnippet
 
 snippet <> "<Component>" b
