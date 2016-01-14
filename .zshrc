@@ -43,3 +43,9 @@ fi
 for f in ~/.shells/* ; do
   source "$f"
 done
+
+# Load nvm
+export NVM_DIR="$HOME/.nvm"
+if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+  source "$NVM_DIR/nvm.sh"
+fi
