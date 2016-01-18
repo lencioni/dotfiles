@@ -1,16 +1,12 @@
-" Remove trailing whitespace on save
-augroup LencioniRemoveTrailingWhitespace
+augroup Lencioni
   autocmd!
+
+  " Remove trailing whitespace on save
   autocmd BufWritePre * :%s/\s\+$//e
-augroup END
 
-" Automatically reload vimrc when it's saved
-augroup LencioniAutoReloadVimRC
-  autocmd!
+  " Automatically reload vimrc when it's saved
   autocmd BufWritePost $MYVIMRC so $MYVIMRC
-augroup END
 
-" Automatically rebuild custom dictionary binaries when saving the text versions
-augroup LencioniMkspell
+  " Automatically rebuild custom dictionary binaries when saving the text versions
   autocmd BufWritePost .vim/spell/*.add silent! :mkspell! %
 augroup END
