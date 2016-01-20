@@ -2,8 +2,6 @@
 " Settings
 "
 
-let g:CommandTMatchWindowReverse   = 1
-let g:CommandTMaxHeight            = 10
 let g:CommandTMaxCachedDirectories = 10
 let g:CommandTScanDotDirectories   = 1
 let g:CommandTTraverseSCM          = 'dir'
