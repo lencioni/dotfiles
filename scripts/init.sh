@@ -31,6 +31,11 @@ ln -sFi .zprezto/runcoms/zlogin .zlogin
 ln -sFi .zprezto/runcoms/zlogout .zlogout
 ln -sFi .zprezto/runcoms/zshenv .zshenv
 
+# Make sure current user owns their .viminfo file. If they do not, Vim history
+# will not work.
+touch ~/.viminfo || true
+sudo chown "$USER" ~/.viminfo
+
 mkdir -p ~/bin
 cd ~/bin
 ln -sFi ../dotfiles/bin/npm-exec-eslint .
