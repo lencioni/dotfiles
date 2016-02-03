@@ -44,7 +44,7 @@ local layoutConfig = {
     if count == 1 then
       hs.grid.set(window, grid.fullScreen)
     else
-      hs.grid.set(window, grid.leftHalf, hs.screen.primaryScreen())
+      hs.grid.set(window, grid.leftTwoThirds, hs.screen.primaryScreen())
     end
   end),
 
