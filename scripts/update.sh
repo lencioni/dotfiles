@@ -28,6 +28,4 @@ git submodule foreach git pull --recurse-submodules
   make
 )
 
-wait
-
 vim -c "call pathogen#helptags() | quit"
