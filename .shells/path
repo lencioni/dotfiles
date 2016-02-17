@@ -8,4 +8,5 @@ PATH=$PATH:/usr/local/bin
 PATH=$PATH:$SYSTEM_PATH
 PATH=$PATH:$HOME/.rbenv/bin
 PATH=$PATH:$HOME/.rbenv/shims
+PATH=$PATH:/usr/local/share/python # pip-installed Python binaries
 export PATH
