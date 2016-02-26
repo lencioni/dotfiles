@@ -23,7 +23,8 @@ let g:syntastic_style_warning_symbol = '⚠'
 
 let g:syntastic_haml_checkers          = ['haml_lint']
 let g:syntastic_javascript_checkers    = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'npm-exec-eslint'
+let s:eslint_path                      = system('PATH=$(npm bin):$PATH && which eslint')
+let g:syntastic_javascript_eslint_exec = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:syntastic_json_checkers          = ['jsonlint']
 let g:syntastic_ruby_checkers          = ['rubocop']
 let g:syntastic_scss_checkers          = ['scss_lint']

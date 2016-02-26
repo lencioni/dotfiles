@@ -38,7 +38,6 @@ sudo chown "$USER" ~/.viminfo
 
 mkdir -p ~/bin
 cd ~/bin
-ln -sFi ../dotfiles/bin/npm-exec-eslint .
 ln -sFi "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" .
 cd -
 
