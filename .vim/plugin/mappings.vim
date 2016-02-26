@@ -32,9 +32,6 @@ nnoremap <unique> <silent> <Leader>g :ImportJSGoTo<CR>
 " \d -- vim-dispatch Dispatch
 nnoremap <unique> <Leader>d :Dispatch<CR>
 
-" Toggle fold at current position.
-nnoremap <tab> za
-
 "
 " Insert mode mappings
 "
