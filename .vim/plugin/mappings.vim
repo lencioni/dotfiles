@@ -11,9 +11,6 @@ nnoremap <leader><leader> <C-^>
 " \e -- edit file, starting in same directory as current file
 nnoremap <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
-" \a -- Ack
-nnoremap <leader>a :Ack<space>
-
 " \w -- Easy save
 nnoremap <leader>w :w<CR>
 
