@@ -23,9 +23,6 @@ nnoremap <silent> <esc> :nohlsearch<return><esc>
 " \j -- import-js import
 nnoremap <unique> <silent> <Leader>j :ImportJSImport<CR>
 
-" \g -- import-js goto
-nnoremap <unique> <silent> <Leader>g :ImportJSGoTo<CR>
-
 " \d -- vim-dispatch Dispatch
 nnoremap <unique> <Leader>d :Dispatch<CR>
 
