@@ -14,7 +14,7 @@ describe('${1}', () => {
 });
 endsnippet
 
-snippet con "context() block" b
+snippet cont "context() block" b
 context('${1}', () => {
 	${0:${VISUAL}}
 });
@@ -43,6 +43,6 @@ expect(${1})${2}.to${3}(${0:${VISUAL}});
 endsnippet
 
 # Subject pattern
-snippet sub "this.subject" b
-this.subject = () => Utils.render(<${1:`!p snip.rv = path_to_component_name(path, pascal_case_basename)`} {...this.props} />);$0
+snippet sub "subject" b
+const subject = () => ${1:shallow}(<${2:`!p snip.rv = path_to_component_name(path, pascal_case_basename)`} {...props} />);$0
 endsnippet
