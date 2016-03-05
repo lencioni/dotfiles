@@ -26,6 +26,7 @@ let g:syntastic_javascript_checkers    = ['eslint']
 let s:eslint_path                      = system('PATH=$(npm bin):$PATH && which eslint')
 let g:syntastic_javascript_eslint_exec = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 let g:syntastic_json_checkers          = ['jsonlint']
+let g:syntastic_python_checkers        = ['python', 'pep8']
 let g:syntastic_ruby_checkers          = ['rubocop']
 let g:syntastic_scss_checkers          = ['scss_lint']
 let g:syntastic_vim_checkers           = ['vint']
