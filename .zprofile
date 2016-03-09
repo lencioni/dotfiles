@@ -6,7 +6,10 @@ if [ ! "$USER" ] ; then
   export USER="${USER:-$(whoami)}"
 fi
 
-# Source Prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile"
+# Interactive shells
+if [[ $- == *i* ]]; then
+  # Source Prezto
+  if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile"
+  fi
 fi

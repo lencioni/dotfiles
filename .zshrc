@@ -11,14 +11,18 @@ setopt extendedglob
 setopt nomatch
 setopt nonomatch # unmatched patterns are left unchanged
 
-zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename "$HOME/.zshrc"
-autoload -Uz compinit
-compinit
+# Interactive shells
+if [[ $- == *i* ]]; then
+  # Autocompletion
+  zstyle ':completion:*' completer _complete _ignored
+  zstyle :compinstall filename "$HOME/.zshrc"
+  autoload -Uz compinit
+  compinit
 
-# Source Prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+  # Source Prezto
+  if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+  fi
 fi
 
 # Load rbenv if available
