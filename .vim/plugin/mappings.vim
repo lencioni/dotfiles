@@ -27,6 +27,14 @@ nnoremap <unique> <Leader>d :Dispatch<CR>
 
 " Insert mode mappings
 
+" Make my overloaded capslock behave better when typing too quickly. The funky
+" expressions are used here to make <C-j> and <C-k> work better with popup
+" menus (e.g. with YouCompleteMe).
+inoremap <C-h> <Esc>h
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<Esc>j"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<Esc>k"
+inoremap <C-l> <Esc>l
+
 " jj -- Easily escape from INSERT mode
 inoremap jj <Esc>
 
