@@ -126,6 +126,7 @@ inlining
 keychains
 lifecycle
 linebreak
+linter
 loadview
 memcached
 memoization
@@ -168,6 +169,7 @@ runtimes
 scannable
 screencast
 screencasts
+screenreaders
 screenshot
 screenshots
 segfaults
@@ -182,6 +184,7 @@ stylesheets
 subdomain
 subdomains
 submodules
+switchover
 symlinked
 symlinking
 templating
