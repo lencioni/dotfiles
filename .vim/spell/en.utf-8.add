@@ -30,6 +30,7 @@ Haml
 Henric
 Heroku
 Hurrell
+IE8
 JS
 JSX
 KPI
@@ -101,9 +102,11 @@ diff
 diffs
 dropdown
 ellipsized
+errored
 etc
 extendable
 fallback
+filesize
 filesystem
 filetype
 followup
