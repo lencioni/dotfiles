@@ -72,9 +72,6 @@
 [submodule ".vim/bundle/vim-signature"]
 	path = .vim/bundle/vim-signature
 	url = git@github.com:kshenoy/vim-signature.git
-[submodule ".vim/bundle/import-js"]
-	path = .vim/bundle/import-js
-	url = git@github.com:trotzig/import-js.git
 [submodule ".vim/bundle/vim-dispatch"]
 	path = .vim/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
