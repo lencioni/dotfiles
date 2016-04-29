@@ -102,3 +102,6 @@
 [submodule ".vim/bundle/loupe"]
 	path = .vim/bundle/loupe
 	url = https://github.com/wincent/loupe.git
+[submodule ".vim/bundle/vim-import-js"]
+	path = .vim/bundle/vim-import-js
+	url = https://github.com/galooshi/vim-import-js.git

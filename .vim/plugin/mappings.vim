@@ -19,7 +19,7 @@ nnoremap Q @q
 nnoremap <silent> <Esc> :nohlsearch<CR><Esc>
 
 " \j -- import-js import
-nnoremap <unique> <silent> <Leader>j :ImportJSImport<CR>
+nnoremap <unique> <silent> <Leader>j :ImportJSWord<CR>
 
 " \d -- vim-dispatch Dispatch
 nnoremap <unique> <Leader>d :Dispatch<CR>
