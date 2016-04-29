@@ -106,6 +106,7 @@ errored
 etc
 extendable
 fallback
+falsey
 filesize
 filesystem
 filetype
@@ -200,6 +201,7 @@ transpile
 transpiled
 transpiles
 truthiness
+truthy
 unarchive
 uninstalling
 unmerged
