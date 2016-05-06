@@ -1,3 +1,6 @@
+*.svg
+*.wsdl
+**.min.*
 .sass-cache
 bower_components
 coverage
@@ -5,4 +8,3 @@ fixtures
 log
 node_modules
 tmp
-vendor
