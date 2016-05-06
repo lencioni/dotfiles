@@ -2,6 +2,7 @@ API
 APIs
 AgileBits
 Ansible
+BEM
 BFS
 CSS
 CTA
@@ -47,6 +48,7 @@ OCaml
 PHP
 PNG
 PNGs
+PascalCasing
 PowerPC
 RVM
 Redis
@@ -81,6 +83,7 @@ blockquote
 blockquotes
 blog
 blogs
+camelCasing
 changelog
 cheatsheet
 checkboxes
