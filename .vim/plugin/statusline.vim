@@ -30,8 +30,7 @@ if has('statusline')
   set statusline+=\    " space
   set statusline+=@    " (literal)
   set statusline+=\    " space
-  set statusline+=%c   " current column number
-  set statusline+=%V   " current virtual column number (-n), if different
+  set statusline+=%v   " current virtual column number
 
   augroup LencioniStatusline
     autocmd!
