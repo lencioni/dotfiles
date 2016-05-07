@@ -105,3 +105,6 @@
 [submodule ".vim/bundle/vim-import-js"]
 	path = .vim/bundle/vim-import-js
 	url = https://github.com/galooshi/vim-import-js.git
+[submodule ".vim/bundle/pinnacle"]
+	path = .vim/bundle/pinnacle
+	url = git@github.com:wincent/pinnacle.git

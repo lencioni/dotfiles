@@ -15,6 +15,6 @@ function! statusline#fenc() abort
 endfunction
 
 function! statusline#update_user1() abort
-  let l:highlight = functions#italicize_group('StatusLine')
+  let l:highlight = pinnacle#italicize('StatusLine')
   execute 'highlight User1 ' . l:highlight
 endfunction

@@ -24,7 +24,7 @@ function s:CheckColorScheme()
     color base16-tomorrow
   endif
 
-  execute 'highlight Comment ' . functions#italicize_group('Comment')
+  execute 'highlight Comment ' . pinnacle#italicize('Comment')
 
   " Give statusline.vim a chance to re-set User1
   doautocmd ColorScheme
