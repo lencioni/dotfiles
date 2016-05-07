@@ -25,13 +25,17 @@ if has('statusline')
   set statusline+=%% " literal %
   set statusline+=%* " reset highlight group
   set statusline+=\  " space
+  set statusline+=%2* " switch to User2 highlight group (bold)
   set statusline+=%l " current line number
+  set statusline+=%* " reset highlight group
   set statusline+=/ " (literal)
   set statusline+=%L " number of lines in buffer
   set statusline+=\  " space
   set statusline+=@ " (literal)
   set statusline+=\  " space
+  set statusline+=%2* " switch to User2 highlight group (bold)
   set statusline+=%v " current virtual column number
+  set statusline+=%* " reset highlight group
 
   augroup LencioniStatusline
     autocmd!
