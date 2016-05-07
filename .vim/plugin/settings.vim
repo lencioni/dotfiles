@@ -20,6 +20,7 @@ set formatoptions+=c " auto-wrap comments using textwidth
 set formatoptions+=n " smart auto-indenting inside numbered lists
 set formatoptions+=q " allow formatting of comments with `gq`
 set hidden " allows you to hide buffers with unsaved changes without being prompted
+set highlight+=@:ColorColumn " ~/@ at end of window, 'showbreak'
 set history=1000 " make vim remember more than 20 commands
 set hlsearch " highlight search strings
 set ignorecase " ignore case when searching
