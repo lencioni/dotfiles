@@ -37,6 +37,10 @@ set shiftwidth=2 " spaces per tab (when shifting)
 set shortmess+=A " ignore annoying swapfile messages
 set shortmess+=I " no splash screen
 
+if has('linebreak')
+  let &showbreak='⤷ ' " start of lines that have been wrapped
+endif
+
 if has('showcmd')
   set showcmd " extra info at end of command line
 endif
