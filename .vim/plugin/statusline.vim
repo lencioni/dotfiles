@@ -1,6 +1,6 @@
 " cf the default statusline: %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 if has('statusline')
-  set statusline+=%< " truncation point, if not enough width available
+  set statusline=%< " truncation point, if not enough width available
   set statusline+=%{statusline#fileprefix()} " relative path to file's directory
   set statusline+=%2* " switch to User2 highlight group (bold)
   set statusline+=%t " filename
