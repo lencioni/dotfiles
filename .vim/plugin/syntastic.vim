@@ -31,6 +31,11 @@ let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_scss_checkers = ['scss_lint']
 let g:syntastic_vim_checkers = ['vint']
 
+" %E{...} - show only if there are errors
+" %e - number of errors
+" %fe - line number of first error
+let g:syntastic_stl_format = '%E{%e ✖ :%fe}'
+
 " Disable Syntastic when Ferret is writing files for speed.
 if has('autocmd')
   augroup LencioniFerretWrite
