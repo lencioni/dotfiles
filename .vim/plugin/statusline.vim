@@ -18,13 +18,17 @@ if has('statusline')
   set statusline+=%(%M%R%{statusline#ft()}%{statusline#fenc()}%)
 
   set statusline+=%* " reset highlight group
+
   set statusline+=%= " split point for left and right groups
+
   set statusline+=\  " space
   set statusline+=%1* " switch to User1 highlight group (italics)
   set statusline+=%p " percentage through buffer
   set statusline+=%% " literal %
   set statusline+=%* " reset highlight group
-  set statusline+=\ @\  " space
+  set statusline+=\  " space
+  set statusline+=@ " literal
+  set statusline+=\  " space
   set statusline+=%v " current virtual column number
 
   augroup LencioniStatusline
