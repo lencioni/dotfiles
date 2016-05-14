@@ -13,3 +13,13 @@ if [[ $- == *i* ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zprofile"
   fi
 fi
+
+
+# Set up PATH
+source ~/.shells/path
+
+# Load nvm
+export NVM_DIR="$HOME/.nvm"
+if [[ -s "$NVM_DIR/nvm.sh" ]]; then
+  source "$NVM_DIR/nvm.sh"
+fi

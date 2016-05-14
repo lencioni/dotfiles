@@ -44,12 +44,7 @@ if [ -d ~/dotfiles ] ; then
   export DOTFILES=~/dotfiles
 fi
 
-for f in ~/.shells/* ; do
-  source "$f"
-done
-
-# Load nvm
-export NVM_DIR="$HOME/.nvm"
-if [[ -s "$NVM_DIR/nvm.sh" ]]; then
-  source "$NVM_DIR/nvm.sh"
-fi
+source ~/.shells/aliases
+source ~/.shells/base16-shell
+source ~/.shells/colors
+source ~/.shells/functions
