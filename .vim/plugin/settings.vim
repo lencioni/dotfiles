@@ -65,14 +65,11 @@ set visualbell " replace beeping with a visual bell
 set whichwrap=b,h,l,s,<,>,[,],~ " <BS>/h/l/<Left>/<Right>/<Space>/~ can cross line boundaries
 
 " patterns to ignore during file-navigation
-set wildignore+=*.o
-set wildignore+=*.pyc " compiled Python bytecode
-set wildignore+=.git
-set wildignore+=.sass-cache " only auto-generated Sass junk
-set wildignore+=bower_components " vendored files
-set wildignore+=log
-set wildignore+=node_modules " typically thousands of vendored files here
-set wildignore+=tmp
+if has('wildignore')
+  set wildignore+=*.o
+  set wildignore+=*.pyc " compiled Python bytecode
+  set wildignore+=.sass-cache " only auto-generated Sass junk
+endif
 
 set wildmenu " show options as list when switching buffers etc
 set wildmode=longest:full,full " shell-like autocomplete to unambiguous portion
