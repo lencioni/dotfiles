@@ -14,6 +14,7 @@ let g:CommandTTraverseSCM = 'dir'
 
 let g:CommandTWildIgnore=&wildignore
 let g:CommandTWildIgnore.=',*/.git'
+let g:CommandTWildIgnore.=',*/.happypack'
 let g:CommandTWildIgnore.=',*/.hg'
 let g:CommandTWildIgnore.=',*/bower_components'
 let g:CommandTWildIgnore.=',*/node_modules'
