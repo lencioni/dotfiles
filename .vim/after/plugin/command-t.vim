@@ -19,7 +19,6 @@ let g:CommandTWildIgnore.=',*/.hg'
 let g:CommandTWildIgnore.=',*/bower_components'
 let g:CommandTWildIgnore.=',*/node_modules'
 let g:CommandTWildIgnore.=',*/tmp'
-let g:CommandTWildIgnore.=',*/vendor'
 
 "
 " Mappings
