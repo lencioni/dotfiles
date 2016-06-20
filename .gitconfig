@@ -68,6 +68,10 @@
 [diff]
 	algorithm = histogram
 
+	# more readable diffs
+	# requires Git 2.9.0 or later
+	compactionHeuristic = true
+
 [help]
 	autocorrect = 10
 	# $ git lgo
