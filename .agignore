@@ -1,6 +1,7 @@
 *.svg
 *.wsdl
 **.min.*
+.git
 .sass-cache
 bower_components
 coverage
