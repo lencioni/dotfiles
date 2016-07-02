@@ -4,42 +4,14 @@
 	co = checkout
 	b = branch
 
-	oneline = log --oneline
-	# e14d631 (HEAD, origin/master, origin/HEAD, master) Merge branch 'maint'
-	# 0f64a5a Merge branch 'rr/misc-fixes'
-	# ef563de convert.c: Fix return type of git_path_check_eol()
-
-	graph = log --oneline --graph
-	# *   e14d631 (HEAD, origin/master, origin/HEAD, master) Merge branch 'maint'
-	# |\
-	# | * 1e501a7 (origin/maint) documentation fix: git difftool uses diff tools, not merge tools.
-	# * |   0f64a5a Merge branch 'rr/misc-fixes'
-	# |\ \
-	# | * | ef563de convert.c: Fix return type of git_path_check_eol()
-	# * | | 05bab3e config.c: Fix a static buffer overwrite bug by avoiding mkpath()
-
-	last = log -1
-	# show the commit message of HEAD
-
-	patch = add --patch
-	# add hunks of code interactively
-	# useful for separating a bunch of changes into logical commits
-
 	amend = commit --amend
-	# take staging and push it into the previous commit
-	# useful when adding small chunks to a WIP commit
-
-	su = submodule update --init
-	# update or initialize each submodule
-
+	graph = log --oneline --graph
+	oneline = log --oneline
+	patch = add --patch
 	refresh = !STASH=$(git stash) && git fetch && git rebase origin/master && test \"$STASH\" != \"No local changes to save\" && git stash pop
-
-	# requires Git 1.7.11.3 or later
-	reword = commit --amend --only --
-
-	rb = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
-
+	reword = commit --amend --only -- # Requires Git 1.7.11.3+
 	showmsg = log --format=%B -n 1
+	su = submodule update --init
 
 [color]
 	ui = auto
@@ -56,8 +28,8 @@
 [core]
 	attributesfile = ~/.gitattributes
 	editor = vim
-	# global gitignore, useful for hiding editor files
-	excludesfile = ~/.gitexcludes
+	excludesfile = ~/.gitexcludes # Global gitignore
+
 	# -i ignore case in searches
 	# -F auto exit if everything fits in one screen
 	# -M verbose prompt
@@ -68,8 +40,8 @@
 [diff]
 	algorithm = histogram
 
-	# more readable diffs
-	# requires Git 2.9.0 or later
+	# More readable diffs
+	# Added in Git 2.9.0
 	compactionHeuristic = true
 
 [help]
@@ -93,10 +65,10 @@
 	autoSquash = true
 	autoStash = true
 
+# Reuse recorded resolution of conflicted merges
+# see `man git-rerere'
 [rerere]
 	enabled = true
-	# Reuse recorded resolution of conflicted merges
-	# see `man git-rerere'
 
 [status]
 	submodulesummary = true
