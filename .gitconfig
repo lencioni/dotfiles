@@ -73,6 +73,9 @@
 [status]
 	submodulesummary = true
 
+[submodule]
+	fetchJobs = 4 # Added in Git 2.9.0.
+
 [user]
 	email = joe.lencioni@gmail.com
 	name = Joe Lencioni
