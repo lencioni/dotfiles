@@ -11,21 +11,7 @@ git submodule foreach git pull --recurse-submodules
   git submodule update --init --recursive
 )
 
-# Install YouCompleteMe
-(
-  cd .vim/bundle/YouCompleteMe
-  git submodule update --init --recursive
-  echo 'Installing YouCompleteMe...'
-  ./install.py
-)
-
-# Install Command-T
-(
-  cd .vim/bundle/command-t/ruby/command-t
-  echo 'Building Command-T...'
-  ruby extconf.rb
-  make clean
-  make
-)
+./compile-ycm.sh
+./compile-commandt.sh
 
 vim -c "call pathogen#helptags() | quit"
