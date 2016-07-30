@@ -1,6 +1,7 @@
 API
 APIs
 AgileBits
+Airbnb
 Ansible
 BEM
 BFS
@@ -90,6 +91,7 @@ blockquote
 blockquotes
 blog
 blogs
+camelCase
 camelCasing
 changelog
 cheatsheet
@@ -119,6 +121,7 @@ errored
 etc
 extendable
 fallback
+fallbacks
 falsey
 filesize
 filesystem
