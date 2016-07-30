@@ -1,1 +1,3 @@
-setlocal spell
+if has('syntax')
+  setlocal spell
+end

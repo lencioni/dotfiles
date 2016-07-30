@@ -1,2 +1,5 @@
 setlocal linebreak      " Soft-wrap lines at word boundaries
-setlocal spell          " Spellcheck
+
+if has('syntax')
+  setlocal spell
+end
