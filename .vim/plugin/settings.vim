@@ -28,7 +28,12 @@ set incsearch " incremental search
 set laststatus=2 " always show the statusline
 set lazyredraw " don't redraw while executing macros, etc.
 set list " show whitespace
-set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
+set listchars=nbsp:⦸ " CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
+set listchars+=tab:▷┅ " WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7)
+                      " + BOX DRAWINGS HEAVY TRIPLE DASH HORIZONTAL (U+2505, UTF-8: E2 94 85)
+set listchars+=extends:» " RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB, UTF-8: C2 BB)
+set listchars+=precedes:« " LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB, UTF-8: C2 AB)
+set listchars+=trail:• " BULLET (U+2022, UTF-8: E2 80 A2)
 set nojoinspaces " don't autoinsert two spaces after '.', '?', '!' for join command
 set number " enable number lines
 set path+=app/assets/javascripts " improve file finding for JS files in Rails projects
@@ -39,7 +44,8 @@ set shortmess+=A " ignore annoying swapfile messages
 set shortmess+=I " no splash screen
 
 if has('linebreak')
-  let &showbreak='⤷ ' " start of lines that have been wrapped
+  " start of lines that have been wrapped
+  let &showbreak='⤷ ' " ARROW POINTING DOWNWARDS THEN CURVING RIGHTWARDS (U+2937, UTF-8: E2 A4 B7)
 endif
 
 if has('showcmd')
