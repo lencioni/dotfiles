@@ -11,7 +11,8 @@ git submodule foreach git pull --recurse-submodules
   git submodule update --init --recursive
 )
 
-./compile-ycm.sh
-./compile-commandt.sh
+DIR=$(dirname "$0")
+"$DIR/compile-ycm.sh"
+"$DIR/compile-commandt.sh"
 
 vim -c "call pathogen#helptags() | quit"
