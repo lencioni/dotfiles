@@ -99,6 +99,7 @@ changelog
 cheatsheet
 checkboxes
 chruby
+className
 codebase
 codepath
 colocated
@@ -223,6 +224,7 @@ submodules
 switchover
 symlinked
 symlinking
+tangly
 templating
 terminfo
 timestamp
