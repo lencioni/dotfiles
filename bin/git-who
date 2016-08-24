@@ -2,4 +2,5 @@
 
 set -e
 
-git log --ignore-all-space --format=%aN "${@-HEAD}" | sort | uniq -c
+git log --ignore-all-space --format=%aN "${@-HEAD}" | \
+  nl | sort -k 2 | uniq -c -f 1 | sort -n -k 2 | awk '{$2=""; print $0}'
