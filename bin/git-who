@@ -2,5 +2,13 @@
 
 set -e
 
+# git-who tells you who the authors are. It is generally most useful when given
+# a path:
+#
+#   git who -- path/to/file
+#
+# This script needs to be executable and in your PATH in order to work
+# correctly.
+
 git log --ignore-all-space --format=%aN "${@-HEAD}" | \
   nl | sort --key=2 | uniq -c -f 1 | sort --numeric-sort --key=2 | awk '{$2=""; print $0}'
