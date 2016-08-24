@@ -36,10 +36,11 @@ ln -sFi .zprezto/runcoms/zshenv .zshenv
 touch ~/.viminfo || true
 sudo chown "$USER" ~/.viminfo
 
-(
+( # Set up ~/bin
   mkdir -p ~/bin
   cd ~/bin
   ln -sFi "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" .
+  ln -sFi "$HOME/dotfiles/bin/git-who" .
 )
 
 cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts

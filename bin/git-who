@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+git log --ignore-all-space --format=%aN "${@-HEAD}" | sort | uniq -c
