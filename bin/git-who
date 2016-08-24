@@ -10,5 +10,5 @@ set -e
 # This script needs to be executable and in your PATH in order to work
 # correctly.
 
-git log --ignore-all-space --format=%aN "${@-HEAD}" | \
+git log --ignore-all-space --format="%aN <%aE>" "${@-HEAD}" | \
   nl | sort --key=2 | uniq -c -f 1 | sort --numeric-sort --key=2 | awk '{$2=""; print $0}'
