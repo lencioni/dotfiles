@@ -32,3 +32,25 @@ function! statusline#update_highlight() abort
   let l:highlight = pinnacle#embolden('StatusLine')
   execute 'highlight User2 ' . l:highlight
 endfunction
+
+" Find out current buffer's size and output it.
+" Adapted from https://gabri.me/blog/diy-vim-statusline
+function! statusline#file_size()
+  let bytes = getfsize(expand('%:p'))
+
+  if bytes <= 0
+    return '0B'
+  endif
+
+  if (bytes >= 1024)
+    let kbytes = bytes / 1024.0
+  endif
+
+  if (exists('kbytes') && kbytes >= 1024)
+    return printf('%.1fM', kbytes / 1024.0)
+  elseif (exists('kbytes'))
+    return printf('%.1fK', kbytes)
+  else
+    return printf('%dB', bytes)
+  endif
+endfunction

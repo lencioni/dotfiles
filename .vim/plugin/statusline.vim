@@ -26,6 +26,8 @@ if has('statusline')
   set statusline+=%* " reset highlight group
 
   set statusline+=\  " space
+  set statusline+=%{statusline#file_size()} " File size
+  set statusline+=\  " space
   set statusline+=%1* " switch to User1 highlight group (italics)
   set statusline+=%p " percentage through buffer
   set statusline+=%% " literal %
