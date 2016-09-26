@@ -36,6 +36,7 @@
 	# -R output ANSI color escape sequences in raw form
 	# -X disable sending termcap init and deinit to terminal
 	pager = zsh -c 'diff-highlight | less -iFMRX' -
+	precomposeunicode = true
 
 [diff]
 	algorithm = histogram
