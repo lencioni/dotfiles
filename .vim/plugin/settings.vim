@@ -5,6 +5,10 @@ set autoread " autoload external changes unless unsaved changes
 set backspace=indent,start,eol " allow unrestricted backspacing in insert mode
 set backupdir=~/.vim/tmp/backup,. " keep backup files out of the way
 
+if exists('&belloff')
+  set belloff=all " never ring the bell for any reason
+endif
+
 if exists('+colorcolumn')
   set colorcolumn=+0 " Vertical line at `textwidth` characters
 endif
