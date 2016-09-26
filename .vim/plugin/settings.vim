@@ -9,6 +9,13 @@ if exists('&belloff')
   set belloff=all " never ring the bell for any reason
 endif
 
+if has('linebreak')
+  set breakindent " indent wrapped lines to match start
+  if exists('&breakindentopt')
+    set breakindentopt=shift:2 " emphasize broken lines by indenting them
+  endif
+endif
+
 if exists('+colorcolumn')
   set colorcolumn=+0 " Vertical line at `textwidth` characters
 endif
@@ -31,6 +38,11 @@ set ignorecase " ignore case when searching
 set incsearch " incremental search
 set laststatus=2 " always show the statusline
 set lazyredraw " don't redraw while executing macros, etc.
+
+if has('linebreak')
+  set linebreak " wrap long lines at characters in 'breakat'
+endif
+
 set list " show whitespace
 set listchars=nbsp:⦸ " CIRCLED REVERSE SOLIDUS (U+29B8, UTF-8: E2 A6 B8)
 set listchars+=tab:▷┅ " WHITE RIGHT-POINTING TRIANGLE (U+25B7, UTF-8: E2 96 B7)
