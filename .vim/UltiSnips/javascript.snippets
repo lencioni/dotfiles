@@ -112,7 +112,7 @@ snippet fl "flow" b
 endsnippet
 
 snippet cl "console.log(...)" b
-console.log(${1:${VISUAL}});${0}
+console.log(${1:`!p snip.rv = re.sub(r';\s*$', '', snip.v.text)`});$0
 endsnippet
 
 snippet re "require" b
