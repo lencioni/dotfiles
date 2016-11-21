@@ -55,6 +55,9 @@
 [log]
 	decorate = short
 
+[merge]
+	conflictStyle = diff3
+
 [pager]
 	show-branch = true
 	status = true # Use pager for `git status`
