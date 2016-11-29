@@ -18,7 +18,7 @@ luma() {
     return 1
   fi
 
-  # Extract hex channels from backround color (RR/GG/BB)
+  # Extract hex channels from background color (RR/GG/BB)
   COLOR_HEX_RED=$(echo "$COLOR_HEX" | cut -d/ -f1)
   COLOR_HEX_GREEN=$(echo "$COLOR_HEX" | cut -d/ -f2)
   COLOR_HEX_BLUE=$(echo "$COLOR_HEX" | cut -d/ -f3)
