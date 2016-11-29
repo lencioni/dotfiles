@@ -4,38 +4,38 @@
 # https://github.com/wincent/wincent/blob/94a0ae02/roles/dotfiles/files/.shells/colors
 #
 
-BASE16_THEMES_DIR=~/.shells/base16-shell/scripts
+BASE16_DIR=~/.shells/base16-shell/scripts
 BASE16_CONFIG=~/.vim/.base16
 
-# Takes a hex color in the form of "RR/GG/BB" and outputs its luma (0-255, where
+# Takes a hex color in the form of "RRGGBB" and outputs its luma (0-255, where
 # 0 is black and 255 is white)
 luma() {
-  COLOR_HEX=$1
+  local COLOR_HEX=$1
 
   if [ -z "$COLOR_HEX" ]
   then
-    echo "Missing argument hex color (RR/GG/BB)"
+    echo "Missing argument hex color (RRGGBB)"
     return 1
   fi
 
-  # Extract hex channels from background color (RR/GG/BB)
-  COLOR_HEX_RED=$(echo "$COLOR_HEX" | cut -d/ -f1)
-  COLOR_HEX_GREEN=$(echo "$COLOR_HEX" | cut -d/ -f2)
-  COLOR_HEX_BLUE=$(echo "$COLOR_HEX" | cut -d/ -f3)
+  # Extract hex channels from background color (RRGGBB)
+  local COLOR_HEX_RED=$(echo "$COLOR_HEX" | cut -c 1-2)
+  local COLOR_HEX_GREEN=$(echo "$COLOR_HEX" | cut -c 3-4)
+  local COLOR_HEX_BLUE=$(echo "$COLOR_HEX" | cut -c 5-6)
 
   # Convert hex colors to decimal
-  COLOR_DEC_RED=$((16#$COLOR_HEX_RED))
-  COLOR_DEC_GREEN=$((16#$COLOR_HEX_GREEN))
-  COLOR_DEC_BLUE=$((16#$COLOR_HEX_BLUE))
+  local COLOR_DEC_RED=$((16#$COLOR_HEX_RED))
+  local COLOR_DEC_GREEN=$((16#$COLOR_HEX_GREEN))
+  local COLOR_DEC_BLUE=$((16#$COLOR_HEX_BLUE))
 
   # Calculate perceived brightness of background per ITU-R BT.709
   # https://en.wikipedia.org/wiki/Rec._709#Luma_coefficients
   # http://stackoverflow.com/a/12043228/18986
-  COLOR_LUMA_RED=$(echo "0.2126 * $COLOR_DEC_RED" | bc)
-  COLOR_LUMA_GREEN=$(echo "0.7152 * $COLOR_DEC_GREEN" | bc)
-  COLOR_LUMA_BLUE=$(echo "0.0722 * $COLOR_DEC_BLUE" | bc)
+  local COLOR_LUMA_RED=$((0.2126 * $COLOR_DEC_RED))
+  local COLOR_LUMA_GREEN=$((0.7152 * $COLOR_DEC_GREEN))
+  local COLOR_LUMA_BLUE=$((0.0722 * $COLOR_DEC_BLUE))
 
-  COLOR_LUMA=$(echo "$COLOR_LUMA_RED + $COLOR_LUMA_GREEN + $COLOR_LUMA_BLUE" | bc)
+  local COLOR_LUMA=$(($COLOR_LUMA_RED + $COLOR_LUMA_GREEN + $COLOR_LUMA_BLUE))
 
   echo "$COLOR_LUMA"
 }
@@ -50,45 +50,43 @@ color() {
 
   case "$SCHEME" in
   help)
-    echo 'color [ashes|default|ocean|railscasts|tomorrow|twilight|...]'
+    echo 'color [tomorrow-night|ocean|grayscale-light|...]'
     echo
     echo 'Available schemes:'
-    find "$BASE16_THEMES_DIR" -name 'base16-*.sh' | \
+    find "$BASE16_DIR" -name 'base16-*.sh' | \
       sed -E 's|.+/base16-||' | \
       sed -E 's/\.sh//' | \
       column
       ;;
-
   *)
-    FILE="$BASE16_THEMES_DIR/base16-$SCHEME.sh"
-    if [[ -s "$FILE" ]]; then
-      echo "$SCHEME" >! "$BASE16_CONFIG"
-
-      # Extract background color from file
-      COLOR_BG=$(grep color_background= "$FILE" | cut -d\" -f2)
-      COLOR_BG_LUMA=$(luma "$COLOR_BG")
-
-      if [ $(echo "$COLOR_BG_LUMA <= 127.5" | bc) -eq 1 ]; then
-        BACKGROUND="dark"
-      else
-        BACKGROUND="light"
+    FILE="$BASE16_DIR/base16-$SCHEME.sh"
+    if [[ -e "$FILE" ]]; then
+      local BG=$(grep color_background= "$FILE" | cut -d \" -f2 | sed -e 's#/##g')
+      local LUMA=$(luma "$BG")
+      local LIGHT=$((LUMA > 127.5))
+      local BACKGROUND=dark
+      if [ "$LIGHT" -eq 1 ]; then
+        BACKGROUND=light
       fi
 
+      echo "$SCHEME" >! "$BASE16_CONFIG"
       echo "$BACKGROUND" >> "$BASE16_CONFIG"
-      # shellcheck source=/dev/null
-      source "$FILE" # TODO silence bell
+      sh "$FILE"
     else
-      echo "Scheme '$SCHEME' not found in $BASE16_THEMES_DIR."
+      echo "Scheme '$SCHEME' not found in $BASE16_DIR"
       echo "Looking for $FILE"
       return 1
     fi
     ;;
-
   esac
 }
 
 if [[ -s "$BASE16_CONFIG" ]]; then
   SCHEME=$(head -1 "$BASE16_CONFIG")
+  BACKGROUND=$(sed -n -e '2 p' "$BASE16_CONFIG")
+  if [ "$BACKGROUND" != 'dark' -a "$BACKGROUND" != 'light' ]; then
+    echo "warning: unknown background type in $BASE16_CONFIG"
+  fi
   color "$SCHEME"
 else
   # default
