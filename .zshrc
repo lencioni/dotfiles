@@ -44,7 +44,7 @@ if [ -d ~/dotfiles ] ; then
   export DOTFILES=~/dotfiles
 fi
 
-source ~/.shells/aliases
-source ~/.shells/base16-shell
-source ~/.shells/colors
-source ~/.shells/functions
+source ~/.zsh/aliases
+source ~/.zsh/base16-shell
+source ~/.zsh/colors
+source ~/.zsh/functions

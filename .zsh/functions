@@ -18,7 +18,7 @@ ssh-ensure-agent() {
 }
 
 tmux() {
-  # taken from: https://github.com/wincent/wincent/blob/master/roles/dotfiles/files/.shells/functions#L33
+  # taken from: https://github.com/wincent/wincent/blob/7a8dcd92/roles/dotfiles/files/.zsh/functions#L41
   # inspired by: https://gist.github.com/lann/6771001
   SOCK_SYMLINK=~/.ssh/ssh_auth_sock
   if [ -r "$SSH_AUTH_SOCK" -a ! -L "$SSH_AUTH_SOCK" ]; then

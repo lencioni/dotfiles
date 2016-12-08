@@ -1,10 +1,10 @@
 #
 # Colors
 # Modified from
-# https://github.com/wincent/wincent/blob/94a0ae02/roles/dotfiles/files/.shells/colors
+# https://github.com/wincent/wincent/blob/7a8dcd92/roles/dotfiles/files/.zsh/colors
 #
 
-BASE16_DIR=~/.shells/base16-shell/scripts
+BASE16_DIR=~/.zsh/base16-shell/scripts
 BASE16_CONFIG=~/.vim/.base16
 
 # Takes a hex color in the form of "RRGGBB" and outputs its luma (0-255, where

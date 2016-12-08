@@ -18,10 +18,10 @@ ln -sFi dotfiles/.gitexcludes .
 ln -sFi dotfiles/.hammerspoon .
 ln -sFi dotfiles/.rdebugrc .
 ln -sFi dotfiles/.rspec .
-ln -sFi dotfiles/.shells .
 ln -sFi dotfiles/.tmux.conf .
 ln -sFi dotfiles/.vimrc .
 ln -sFi dotfiles/.vim .
+ln -sFi dotfiles/.zsh .
 
 ln -sFi dotfiles/.zprezto .
 ln -sFi dotfiles/.zpreztorc .

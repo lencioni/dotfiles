@@ -16,7 +16,7 @@ fi
 
 
 # Set up PATH
-source ~/.shells/path
+source ~/.zsh/path
 
 # Load nvm
 export NVM_DIR="$HOME/.nvm"
