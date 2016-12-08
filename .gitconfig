@@ -13,6 +13,16 @@
 	showmsg = log --format=%B -n 1
 	su = submodule update --init
 
+	# git-who tells you who the authors are. It is generally most useful when
+	# given a path:
+	#
+	#   git who -- path/to/file
+	who = "!f() { \
+		git log --ignore-all-space --pretty=format:'%Cgreen%<(30)%aN%Creset %Cblue<%aE>%Creset' \"${@-HEAD}\" \
+		| nl | sort --key=2 | uniq -c -f 1 | sort --numeric-sort --key=2 \
+		| awk '{$2=\"\"; print $0}'; \
+	}; f"
+
 [color]
 	ui = auto
 

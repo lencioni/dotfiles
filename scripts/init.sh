@@ -40,7 +40,6 @@ sudo chown "$USER" ~/.viminfo
   mkdir -p ~/bin
   cd ~/bin
   ln -sFi "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" .
-  ln -sFi "$HOME/dotfiles/bin/git-who" .
 )
 
 cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts
