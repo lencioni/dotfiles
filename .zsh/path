@@ -10,3 +10,5 @@ PATH=$PATH:$HOME/.rbenv/bin
 PATH=$PATH:$HOME/.rbenv/shims
 PATH=$PATH:/usr/local/share/python # pip-installed Python binaries
 export PATH
+
+fpath=($HOME/.zsh/completions $fpath)
