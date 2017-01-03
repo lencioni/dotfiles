@@ -8,7 +8,6 @@ setopt appendhistory
 setopt autocd
 setopt beep
 setopt extendedglob
-setopt nomatch
 setopt nonomatch # unmatched patterns are left unchanged
 
 # Interactive shells
