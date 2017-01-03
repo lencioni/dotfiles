@@ -33,8 +33,6 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'homebrew' \
   'osx' \
-  'ruby' \
-  'rails' \
   'tmux' \
   'directory' \
   'spectrum' \
@@ -96,13 +94,6 @@ zstyle ':prezto:module:git:status:ignore' submodules 'dirty'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'sorin'
-
-#
-# Ruby
-#
-
-# Auto switch the Ruby version on directory change.
-# zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
 # Screen
