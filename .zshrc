@@ -13,12 +13,6 @@ setopt nonomatch # unmatched patterns are left unchanged
 
 # Interactive shells
 if [[ $- == *i* ]]; then
-  # Autocompletion
-  zstyle ':completion:*' completer _complete _ignored
-  zstyle :compinstall filename "$HOME/.zshrc"
-  autoload -Uz compinit
-  compinit
-
   # Source Prezto
   if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
