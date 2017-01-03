@@ -25,7 +25,6 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'tmux' \
   'directory' \
-  'spectrum' \
   'utility' \
   'completion' \
   'syntax-highlighting' \
