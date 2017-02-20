@@ -21,11 +21,6 @@ if has('statusline')
 
   set statusline+=%= " split point for left and right groups
 
-  set statusline+=%#Error# " switch to Error highlight group
-  set statusline+=%{SyntasticStatuslineFlag()} " configured by syntastic_stl_format
-  set statusline+=%* " reset highlight group
-
-  set statusline+=\  " space
   set statusline+=%{statusline#file_size()} " File size
   set statusline+=\  " space
   set statusline+=%1* " switch to User1 highlight group (italics)
