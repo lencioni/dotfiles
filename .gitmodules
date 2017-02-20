@@ -103,3 +103,6 @@
 	path = .vim/bundle/pinnacle
 	url = git@github.com:wincent/pinnacle.git
 	ignore = dirty
+[submodule ".vim/bundle/ale"]
+	path = .vim/bundle/ale
+	url = https://github.com/w0rp/ale.git
