@@ -19,6 +19,11 @@ if [[ $- == *i* ]]; then
   fi
 fi
 
+# Load rbenv if available
+if which rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+fi
+
 export EDITOR=vim
 export VISUAL=vim
 
