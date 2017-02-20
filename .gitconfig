@@ -73,7 +73,7 @@
 	status = true # Use pager for `git status`
 
 [push]
-	default = upstream
+	default = current
 
 [rebase]
 	autoSquash = true
