@@ -82,7 +82,7 @@
 # Reuse recorded resolution of conflicted merges
 # see `man git-rerere'
 [rerere]
-	enabled = true
+	enabled = 1
 
 [status]
 	submodulesummary = true
