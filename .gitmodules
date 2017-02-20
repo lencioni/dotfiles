@@ -53,9 +53,6 @@
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule "extras/inconsolata"]
-	path = extras/inconsolata
-	url = git@github.com:DeLaGuardo/Inconsolata-LGC.git
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/sorin-ionescu/prezto.git

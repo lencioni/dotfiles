@@ -42,7 +42,4 @@ sudo chown "$USER" ~/.viminfo
   ln -sFi "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" .
 )
 
-cp dotfiles/extras/inconsolata/*.ttf ~/Library/Fonts
-cp dotfiles/extras/Inconsolata-dz-Powerline.otf ~/Library/Fonts
-
 dotfiles/.osx
