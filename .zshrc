@@ -18,10 +18,10 @@ if [[ $- == *i* ]]; then
   fi
 fi
 
-# Load rbenv if available
-if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
+# Load chruby if available
+CHRUBY=/usr/local/share/chruby
+test -e "$CHRUBY/chruby.sh" && . "$CHRUBY/chruby.sh"
+test -e "$CHRUBY/auto.sh" && . "$CHRUBY/auto.sh"
 
 export EDITOR=vim
 export VISUAL=vim
