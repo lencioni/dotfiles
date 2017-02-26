@@ -4,9 +4,7 @@
 # https://github.com/wincent/wincent/blob/7a8dcd92/roles/dotfiles/files/.zsh/colors
 #
 
-BASE16_DIR=~/.zsh/base16-shell/scripts
 BASE16_CONFIG=~/.vim/.base16
-BASE16_CONFIG_PREVIOUS=~/.vim/.base16.previous
 
 # Takes a hex color in the form of "RRGGBB" and outputs its luma (0-255, where
 # 0 is black and 255 is white)
@@ -53,6 +51,11 @@ luma() {
 }
 
 color() {
+  local SCHEME
+  local BASE16_DIR
+  local BASE16_CONFIG_PREVIOUS
+  BASE16_DIR=~/.zsh/base16-shell/scripts
+  BASE16_CONFIG_PREVIOUS="$BASE16_CONFIG.previous"
   SCHEME="$1"
 
   if [ $# -eq 0 -a -s "$BASE16_CONFIG" ]; then
