@@ -82,17 +82,6 @@ color() {
     color "$PREVIOUS_SCHEME"
     ;;
   *)
-    # Check to see if the requested scheme is the same as the current scheme,
-    # and if it is, bail out. This avoids overwriting the previous scheme file
-    # with a duplicate, allowing `color -` to be more useful in more situations.
-    if [[ -s "$BASE16_CONFIG" ]]; then
-      local CURRENT_SCHEME
-      CURRENT_SCHEME=$(head -n1 "$BASE16_CONFIG")
-      if [ "$SCHEME" = "$CURRENT_SCHEME" ]; then
-        return
-      fi
-    fi
-
     FILE="$BASE16_DIR/base16-$SCHEME.sh"
     if [[ -e "$FILE" ]]; then
       local BG
@@ -107,12 +96,20 @@ color() {
         BACKGROUND=light
       fi
 
+      # Check to see if the requested scheme is the same as the current scheme,
+      # and if it is, don't move it to the previous scheme. This avoids
+      # overwriting the previous scheme file with a duplicate, allowing `color
+      # -` to be more useful in more situations.
       if [[ -s "$BASE16_CONFIG" ]]; then
-        mv -f "$BASE16_CONFIG" "$BASE16_CONFIG_PREVIOUS"
+        local CURRENT_SCHEME
+        CURRENT_SCHEME=$(head -n1 "$BASE16_CONFIG")
+        if [ "$SCHEME" != "$CURRENT_SCHEME" ]; then
+          mv -f "$BASE16_CONFIG" "$BASE16_CONFIG_PREVIOUS"
+          echo "$SCHEME" >! "$BASE16_CONFIG"
+          echo "$BACKGROUND" >> "$BASE16_CONFIG"
+        fi
       fi
 
-      echo "$SCHEME" >! "$BASE16_CONFIG"
-      echo "$BACKGROUND" >> "$BASE16_CONFIG"
       sh "$FILE"
     else
       echo "Scheme '$SCHEME' not found in $BASE16_DIR"
