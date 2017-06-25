@@ -1,5 +1,7 @@
 # Compiled Python bytecode
 *.pyc
 
+.DS_Store
+
 .vim/.base16
 .vim/.base16.previous
