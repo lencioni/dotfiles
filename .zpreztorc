@@ -29,6 +29,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'autosuggestions' \
   'prompt'
 
 # editor: Set the key mapping style to 'emacs' or 'vi'.
