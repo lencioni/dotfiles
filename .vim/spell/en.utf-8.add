@@ -3,6 +3,7 @@ APIs
 AgileBits
 Airbnb
 Ansible
+Appveyor
 BEM
 BFS
 CSS
@@ -28,6 +29,7 @@ Firefox
 Fixnum
 GitHub
 GraphQL
+HOC
 Haml
 Hammerspoon
 Happo
@@ -35,6 +37,7 @@ Henric
 Heroku
 Hurrell
 IE8
+ImportJS
 JS
 JSON
 JSX
@@ -56,6 +59,7 @@ PNG
 PNGs
 PascalCasing
 PowerPC
+PureComponents
 RVM
 Recurse
 Redis
@@ -96,6 +100,7 @@ blog
 blogs
 camelCase
 camelCasing
+cancelable
 changelog
 cheatsheet
 checkboxes
@@ -112,6 +117,8 @@ configs
 copypasta
 cron
 dedupes
+deoptimization
+deoptimizing
 destructure
 destructured
 destructuring
@@ -130,7 +137,9 @@ falsey
 filesize
 filesystem
 filetype
+findability
 followup
+frontend
 gitignore
 grayscale
 grokability
@@ -153,6 +162,7 @@ lifecycle
 linebreak
 linter
 loadview
+mapStateToProps
 memcached
 memoization
 memoize
@@ -209,6 +219,8 @@ screenshot
 screenshots
 screenshotting
 segfaults
+serializer
+shouldComponentUpdate
 showstopper
 spellchecker
 spellfile
