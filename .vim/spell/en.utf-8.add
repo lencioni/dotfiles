@@ -117,6 +117,7 @@ configs
 copypasta
 cron
 dedupes
+defaultProps
 deoptimization
 deoptimizing
 destructure
@@ -197,6 +198,7 @@ pushState
 quicksort
 rbenv
 readability
+rebased
 recurse
 recursed
 recursing
@@ -222,6 +224,7 @@ segfaults
 serializer
 shouldComponentUpdate
 showstopper
+snuck
 spellchecker
 spellfile
 stateful
