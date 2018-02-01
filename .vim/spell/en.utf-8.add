@@ -98,6 +98,7 @@ blockquote
 blockquotes
 blog
 blogs
+cacheability
 camelCase
 camelCasing
 cancelable
@@ -119,6 +120,7 @@ cron
 dedupes
 defaultProps
 deoptimization
+deoptimized
 deoptimizing
 destructure
 destructured
@@ -158,6 +160,7 @@ infocmp
 inline
 inlined
 inlining
+janky
 keychains
 lifecycle
 linebreak
@@ -211,6 +214,7 @@ repo
 repos
 requestAnimationFrame
 retrigger
+rollout
 rsync
 runtimes
 scannable
@@ -254,12 +258,14 @@ transpiles
 truthiness
 truthy
 unarchive
+uncompiled
 underdelivered
 underdelivering
 uninstalling
 unitless
 unmerged
 unprefixed
+unregistering
 unsetting
 unstyled
 unsubscribe
