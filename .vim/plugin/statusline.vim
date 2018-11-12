@@ -1,3 +1,16 @@
+function! LinterStatus() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+
+  return l:counts.total == 0 ? '' : printf(
+        \   '⚠ %d ✖ %d',
+        \   all_non_errors,
+        \   all_errors
+        \)
+endfunction
+
 " cf the default statusline: %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 if has('statusline')
   set statusline=%< " truncation point, if not enough width available
@@ -22,7 +35,8 @@ if has('statusline')
   set statusline+=%= " split point for left and right groups
 
   set statusline+=%#Error# " switch to Error highlight group
-  set statusline+=%{ALEGetStatusLine()} " configured by ale_statusline_format
+
+  set statusline+=%{LinterStatus()}
   set statusline+=%* " reset highlight group
   set statusline+=\  " space
 
