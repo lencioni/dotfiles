@@ -1,0 +1,133 @@
+{
+  // TODO: render trailing whitespace?
+  "editor.renderWhitespace": "none",
+
+  "editor.rulers": [
+    100,
+  ],
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "400",
+
+  "editor.renderIndentGuides": false,
+
+  // Make pressing tab fast for running snippets
+  "editor.tabCompletion": "onlySnippets",
+
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true,
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true,
+    },
+  ],
+
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  "terminal.integrated.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontSize": 16,
+
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    // Easy escape to normal mode
+    {
+      "before": [
+        "j",
+        "j",
+      ],
+      "after": [
+        "<Esc>",
+      ],
+    },
+  ],
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // gf is broken, so use gd instead
+    {
+      "before": [
+        "g",
+        "f",
+      ],
+      "after": [
+        "g",
+        "d",
+      ],
+    },
+
+    // Toggle buffer
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.openPreviousEditorFromHistory",
+        },
+        {
+          "command": "workbench.action.acceptSelectedQuickOpenItem",
+        }
+      ]
+    },
+
+    // Easy save
+    {
+      "before": [
+        "<leader>",
+        "w",
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+        },
+      ],
+    },
+
+    // Command-T
+    {
+      "before": [
+        "<leader>",
+        "t",
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen",
+        },
+      ],
+    },
+  ],
+
+  /*
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<tab>",
+      ],
+      "commands": [
+        {
+          "command": "editor.action.insertSnippet",
+        }
+      ]
+    }
+  ],
+  */
+
+  "window.title": "${rootName}${separator}${activeEditorLong}",
+  "window.zoomLevel": 0,
+
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Monokai",
+  "workbench.editor.showTabs": false,
+}

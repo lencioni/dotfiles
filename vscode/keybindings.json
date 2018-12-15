@@ -1,0 +1,6 @@
+[
+  { "key": "ctrl+n", "command": "explorer.newFile" },
+
+  // From https://code.visualstudio.com/docs/getstarted/userinterface#_working-without-tabs
+  { "key": "cmd+w", "command": "workbench.action.closeEditorsInGroup" },
+]

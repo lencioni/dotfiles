@@ -5,3 +5,6 @@
 
 .vim/.base16
 .vim/.base16.previous
+
+vscode/workspaceStorage
+vscode/globalStorage
