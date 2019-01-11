@@ -8,4 +8,57 @@
     "description": "Log output to console",
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
   },
+
+  "describe(...)": {
+    "prefix": "des",
+    "body": [
+      "describe('$1', () => {",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "});",
+    ],
+    "description": "[tests] describe block",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+  },
+
+  "beforeEach(...)": {
+    "prefix": "bef",
+    "body": [
+      "beforeEach(() => {",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "});",
+    ],
+    "description": "[tests] beforeEach block",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+  },
+
+  "afterEach(...)": {
+    "prefix": "aft",
+    "body": [
+      "afterEach(() => {",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "});",
+    ],
+    "description": "[tests] afterEach block",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+  },
+
+  "it(...)": {
+    "prefix": "it",
+    "body": [
+      "it('$1', () => {",
+      "\t${2:$TM_SELECTED_TEXT}",
+      "});",
+    ],
+    "description": "[tests] it block",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+  },
+
+  "expect(...)": {
+    "prefix": "exp",
+    "body": [
+      "expect($1)$2;$3",
+    ],
+    "description": "[tests] expect assertion",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+  },
 }
