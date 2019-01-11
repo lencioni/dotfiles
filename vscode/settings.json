@@ -15,6 +15,19 @@
   "editor.tabCompletion": "onlySnippets",
 
   "editor.tabSize": 2,
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        // Italic comments
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
   "editor.minimap.enabled": false,
 
   "eslint.autoFixOnSave": true,
