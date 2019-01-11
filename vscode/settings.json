@@ -120,6 +120,18 @@
         },
       ],
     },
+
+    // Join lines with comments
+    {
+      "before": ["J"],
+      "after": [],
+      "commands": [
+        {
+          "command": "joinCommentAware.join",
+          "args": []
+        }
+      ]
+    }
   ],
 
   /*
