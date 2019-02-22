@@ -1,4 +1,6 @@
 {
+  "breadcrumbs.enabled": true,
+
   // Prevent typing things like `.` and `;` from accepting autocomplete suggestions
   "editor.acceptSuggestionOnCommitCharacter": false,
 
@@ -134,7 +136,22 @@
           "args": []
         }
       ]
-    }
+    },
+
+    // vim-vinegar
+    {
+      "before": ["-"],
+      "commands": [
+        {
+          "command": "breadcrumbs.toggleToOn",
+          "when": "!config.breadcrumbs.enabled",
+        },
+        {
+          "command": "breadcrumbs.focusAndSelect",
+          "when": "breadcrumbsPossible",
+        },
+      ],
+    },
   ],
 
   /*
