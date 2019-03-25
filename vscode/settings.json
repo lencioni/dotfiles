@@ -175,4 +175,5 @@
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Monokai",
   "workbench.editor.showTabs": false,
+  "workbench.panel.defaultLocation": "right",
 }
