@@ -56,6 +56,13 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "**/tmp": true
+  },
+  "search.location": "panel",
+
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.fontSize": 16,
