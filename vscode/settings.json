@@ -35,6 +35,10 @@
 
   "editor.minimap.enabled": false,
 
+  // The option `"inMarkupAndStylesheetFilesOnly"` applies to html, haml, jade,
+  // slim, xml, xsl, css, scss, sass, less and stylus.
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
