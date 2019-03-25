@@ -176,4 +176,5 @@
   "workbench.colorTheme": "Monokai",
   "workbench.editor.showTabs": false,
   "workbench.panel.defaultLocation": "right",
+  "workbench.settings.editor": "json",
 }
