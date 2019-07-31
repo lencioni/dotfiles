@@ -2,6 +2,8 @@
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "off",
 
+  "editor.accessibilitySupport": "off",
+
   // Prevent typing things like `.` and `;` from accepting autocomplete suggestions
   "editor.acceptSuggestionOnCommitCharacter": false,
 
