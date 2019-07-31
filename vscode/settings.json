@@ -4,6 +4,9 @@
   // Prevent typing things like `.` and `;` from accepting autocomplete suggestions
   "editor.acceptSuggestionOnCommitCharacter": false,
 
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+
   // TODO: render trailing whitespace?
   "editor.renderWhitespace": "none",
 
