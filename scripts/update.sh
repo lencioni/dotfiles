@@ -2,8 +2,8 @@
 
 set -e
 
-git submodule foreach git checkout master
-git submodule foreach git pull --recurse-submodules
+git submodule foreach 'git checkout master'
+git submodule foreach 'git pull --recurse-submodules || :'
 
 # Update prezto
 (
