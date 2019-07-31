@@ -69,6 +69,7 @@
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.scrollback": 4000,
 
   "vim.hlsearch": true,
   "vim.leader": "<space>",
