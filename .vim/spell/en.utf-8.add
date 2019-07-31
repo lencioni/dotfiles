@@ -117,6 +117,8 @@ config
 configs
 copypasta
 cron
+datepicker
+datepickers
 dedupes
 defaultProps
 deoptimization
@@ -151,6 +153,8 @@ hacky
 homogenous
 hostnames
 https
+hyperloop
+hypernova
 iCloud
 iOS
 iTerm
@@ -187,6 +191,7 @@ nvALT
 octothorpe
 ok
 overpromising
+overscrolling
 passphrases
 permalinks
 plugin
