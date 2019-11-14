@@ -73,6 +73,7 @@
     "**/tmp": true
   },
   "search.location": "panel",
+  "search.useReplacePreview": false,
 
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontWeight": "400",
