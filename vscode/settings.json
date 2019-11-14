@@ -12,6 +12,7 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
 
+  "editor.renderControlCharacters": false,
   // TODO: render trailing whitespace?
   "editor.renderWhitespace": "none",
 
