@@ -80,6 +80,8 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.scrollback": 4000,
 
+  "typescript.disableAutomaticTypeAcquisition": true,
+
   "vim.hlsearch": true,
   "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
