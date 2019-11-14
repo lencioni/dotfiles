@@ -16,6 +16,7 @@ ln -sFi dotfiles/.gitattributes .
 ln -sFi dotfiles/.gitconfig .
 ln -sFi dotfiles/.gitexcludes .
 ln -sFi dotfiles/.hammerspoon .
+ln -sFi dotfiles/.p10k.zsh .
 ln -sFi dotfiles/.rdebugrc .
 ln -sFi dotfiles/.rspec .
 ln -sFi dotfiles/.tmux.conf .
