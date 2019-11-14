@@ -62,6 +62,8 @@
     },
   ],
 
+  "extensions.ignoreRecommendations": false,
+
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
