@@ -82,6 +82,8 @@
 
   "typescript.disableAutomaticTypeAcquisition": true,
 
+  "yaml.validate": true,
+
   "vim.hlsearch": true,
   "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
