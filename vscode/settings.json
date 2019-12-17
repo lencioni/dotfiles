@@ -64,6 +64,9 @@
 
   "extensions.ignoreRecommendations": false,
 
+  "files.associations": {
+    "*.html": "html"
+  },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
