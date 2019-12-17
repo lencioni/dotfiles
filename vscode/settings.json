@@ -72,6 +72,8 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
+  "git.enabled": true,
+
   "search.exclude": {
     "**/bower_components": true,
     "**/node_modules": true,
