@@ -23,6 +23,8 @@
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
 
+  "editor.minimap.enabled": false,
+
   "editor.renderIndentGuides": false,
 
   // Make pressing tab fast for running snippets
@@ -41,8 +43,6 @@
       }
     ]
   },
-
-  "editor.minimap.enabled": false,
 
   // The option `"inMarkupAndStylesheetFilesOnly"` applies to html, haml, jade,
   // slim, xml, xsl, css, scss, sass, less and stylus.
