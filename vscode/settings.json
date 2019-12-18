@@ -1,4 +1,18 @@
 {
+  // Disable formatOnSave for TS/JS since ESLint takes care of this
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "off",
 
@@ -10,7 +24,12 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
 
   "editor.autoClosingBrackets": "never",
+
   "editor.autoClosingQuotes": "never",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 
   "editor.renderControlCharacters": false,
   // TODO: render trailing whitespace?
@@ -50,18 +69,12 @@
   // slim, xml, xsl, css, scss, sass, less and stylus.
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
 
-  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    {
-      "language": "typescript",
-      "autoFix": true,
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true,
-    },
+    "typescript",
+    "typescriptreact",
   ],
 
   "extensions.ignoreRecommendations": false,
