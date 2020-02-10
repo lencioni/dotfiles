@@ -354,7 +354,7 @@
   "editor.rulers": [
     100,
   ],
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "Source Code Variable, Source Code Pro",
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
 
@@ -413,7 +413,7 @@
   "search.location": "panel",
   "search.useReplacePreview": false,
 
-  "terminal.integrated.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontFamily": "Source Code Variable, Source Code Pro",
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.scrollback": 4000,
