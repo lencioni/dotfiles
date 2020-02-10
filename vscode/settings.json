@@ -403,6 +403,8 @@
 
   "git.enabled": true,
 
+  "liveshare.audio.joinCallBehavior": "accept",
+
   "search.exclude": {
     "**/bower_components": true,
     "**/node_modules": true,
