@@ -1,6 +1,7 @@
 **.min.*
 *.svg
 *.wsdl
+*.graphql
 .git
 .sass-cache
 bower_components
