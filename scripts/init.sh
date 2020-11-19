@@ -32,6 +32,9 @@ ln -sFi .zprezto/runcoms/zlogin .zlogin
 ln -sFi .zprezto/runcoms/zlogout .zlogout
 ln -sFi .zprezto/runcoms/zshenv .zshenv
 
+mkdir -p $HOME/Library/Application\ Support/Code
+ln -sFi $HOME/dotfiles/vscode $HOME/Library/Application\ Support/Code/User
+
 # Make sure current user owns their .viminfo file. If they do not, Vim history
 # will not work.
 touch ~/.viminfo || true
