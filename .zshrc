@@ -26,9 +26,6 @@ test -e "$CHRUBY/auto.sh" && . "$CHRUBY/auto.sh"
 export EDITOR=vim
 export VISUAL=vim
 
-# Source .zshrc.local if it exists
-test -r ~/.zshrc.local && source ~/.zshrc.local
-
 #
 # Load extra functionality
 #
@@ -41,3 +38,10 @@ source ~/.zsh/aliases
 source ~/.zsh/base16-shell
 source ~/.zsh/colors
 source ~/.zsh/functions
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# Source .zshrc.local if it exists
+test -r ~/.zshrc.local && source ~/.zshrc.local
+
