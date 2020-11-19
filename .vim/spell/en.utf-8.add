@@ -6,6 +6,7 @@ Ansible
 Appveyor
 BEM
 BFS
+Bazel
 CSS
 CTA
 Clojure
@@ -58,6 +59,7 @@ PANTONE
 PHP
 PNG
 PNGs
+PRs
 PascalCasing
 PowerPC
 PureComponents
@@ -121,6 +123,7 @@ copypasta
 cron
 datepicker
 datepickers
+dedupe
 dedupes
 defaultProps
 deoptimization
@@ -183,10 +186,12 @@ metadata
 microservice
 middleware
 minifier
+miscategorized
 mixin
 mixins
 mkview
 monit
+monorepo
 nginx
 npm
 nvALT
@@ -208,6 +213,7 @@ pushState
 quicksort
 rbenv
 readability
+rebase
 rebased
 recurse
 recursed
@@ -276,6 +282,7 @@ unregistering
 unsetting
 unstyled
 unsubscribe
+upstreamed
 username
 usernames
 versioned
