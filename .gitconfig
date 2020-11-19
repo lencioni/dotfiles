@@ -8,7 +8,7 @@
 	graph = log --oneline --graph
 	oneline = log --oneline
 	patch = add --patch
-	refresh = !git fetch origin master && git rebase origin/master
+	refresh = "!BRANCH=$(git symbolic-ref --short refs/remotes/origin/HEAD | cut -d/ -f2); git fetch origin \"$BRANCH\" && git rebase \"origin/$BRANCH\""
 	reword = commit --amend --only -- # Requires Git 1.7.11.3+
 	showmsg = log --format=%B -n 1
 	su = submodule update --init
