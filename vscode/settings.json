@@ -397,6 +397,10 @@
 
   "git.enabled": true,
 
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+
   "liveshare.audio.joinCallBehavior": "accept",
 
   "search.exclude": {
