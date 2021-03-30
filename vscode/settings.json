@@ -1,18 +1,4 @@
 {
-  // Disable formatOnSave for TS/JS since ESLint takes care of this
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolPath": "off",
 
@@ -549,4 +535,34 @@
   "workbench.editor.showTabs": false,
   "workbench.panel.defaultLocation": "right",
   "workbench.settings.editor": "json",
+
+  "[javascript]": {
+    // Disable formatOnSave for TS/JS since ESLint takes care of this
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    // Disable formatOnSave for TS/JS since ESLint takes care of this
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    // Disable formatOnSave for TS/JS since ESLint takes care of this
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    // Disable formatOnSave for TS/JS since ESLint takes care of this
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
