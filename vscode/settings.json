@@ -415,7 +415,7 @@
   "terminal.integrated.fontFamily": "Source Code Variable, Source Code Pro",
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.scrollback": 4000,
+  "terminal.integrated.scrollback": 100000,
 
   "typescript.disableAutomaticTypeAcquisition": true,
 
