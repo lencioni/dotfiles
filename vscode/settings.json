@@ -339,6 +339,8 @@
     "source.fixAll.eslint": true
   },
 
+  "editor.folding": false,
+
   "editor.renderControlCharacters": false,
   // TODO: render trailing whitespace?
   "editor.renderWhitespace": "none",
