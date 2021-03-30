@@ -35,9 +35,6 @@ zstyle ':prezto:load' pmodule \
 # editor: Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
 
-# editor: Auto convert .... to ../..
-zstyle ':prezto:module:editor' dot-expansion 'yes'
-
 # git: Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 zstyle ':prezto:module:git:status:ignore' submodules 'dirty'
 
