@@ -1,4 +1,13 @@
 {
+  "/** ... */": {
+    "prefix": "/**",
+    "body": [
+      "/** $1 */$2",
+    ],
+    "description": "JSDoc comment block",
+    "scope": "javascript,javascriptreact,typescript,typescriptreact",
+  },
+
   "console.log": {
     "prefix": "cl",
     "body": [
