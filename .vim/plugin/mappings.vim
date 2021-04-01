@@ -16,7 +16,7 @@ nnoremap <Leader>w :w<CR>
 nnoremap Q @q
 
 " <Esc> -- Clear search highlighting
-nnoremap <silent> <Esc> :nohlsearch<CR><Esc>
+nnoremap <silent> <Esc><Esc> :nohlsearch<CR><Esc>
 
 " \j -- import-js import
 nnoremap <unique> <silent> <Leader>j :ImportJSWord<CR>
