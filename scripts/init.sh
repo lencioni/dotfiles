@@ -35,6 +35,9 @@ ln -sFi .zprezto/runcoms/zshenv .zshenv
 mkdir -p "$HOME/Library/Application\ Support/Code"
 ln -sFi "$HOME/dotfiles/vscode" "$HOME/Library/Application\ Support/Code/User"
 
+mkdir -p "$HOME/.config"
+ln -sFi "$HOME/dotfiles/karabiner" "$HOME/.config/karabiner"
+
 # Make sure current user owns their .viminfo file. If they do not, Vim history
 # will not work.
 touch ~/.viminfo || true
