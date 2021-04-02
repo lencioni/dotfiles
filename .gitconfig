@@ -9,6 +9,7 @@
 	oneline = log --oneline
 	patch = add --patch
 	refresh = "!BRANCH=$(git symbolic-ref --short refs/remotes/origin/HEAD | cut -d/ -f2); git fetch origin \"$BRANCH\" && git rebase \"origin/$BRANCH\""
+	delete-merged = "!BRANCH=$(git symbolic-ref --short refs/remotes/origin/HEAD | cut -d/ -f2); git branch --merged | egrep -v \"(^\\*|$BRANCH)\" | xargs git branch --delete"
 	reword = commit --amend --only -- # Requires Git 1.7.11.3+
 	showmsg = log --format=%B -n 1
 	su = submodule update --init
