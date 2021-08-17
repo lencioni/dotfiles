@@ -6,6 +6,7 @@
 .sass-cache
 bower_components
 coverage
+dist
 fixtures
 log
 node_modules
