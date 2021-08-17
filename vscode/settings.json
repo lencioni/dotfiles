@@ -104,6 +104,7 @@
     "affordance",
     "aggregator",
     "allowlist",
+    "allowlisted",
     "app",
     "assistive",
     "async",
@@ -224,6 +225,7 @@
     "permalinks",
     "plugin",
     "plugins",
+    "pollyfills",
     "polyfill",
     "polyfills",
     "postprocess",
@@ -322,7 +324,7 @@
     "wiki",
     "wikitext",
     "xargs",
-    "zsh"
+    "zsh",
   ],
 
   "diffEditor.renderSideBySide": true,
