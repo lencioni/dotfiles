@@ -11,8 +11,7 @@
   "console.log": {
     "prefix": "cl",
     "body": [
-      "console.log(${1:$TM_SELECTED_TEXT});",
-      "$2",
+      "console.log(${1:$TM_SELECTED_TEXT});$2",
     ],
     "description": "Log output to console",
     "scope": "javascript,javascriptreact,typescript,typescriptreact",
