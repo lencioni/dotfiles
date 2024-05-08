@@ -38,7 +38,7 @@
 
 [core]
 	attributesfile = ~/.gitattributes
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitexcludes # Global gitignore
 
 	# -i ignore case in searches
