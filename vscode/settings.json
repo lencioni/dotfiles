@@ -360,12 +360,22 @@
 
   "editor.autoClosingQuotes": "never",
 
+  "editor.autoIndent": "full",
+
+  "editor.bracketPairColorization.enabled": true,
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.markdownlint": "explicit"
   },
 
   "editor.folding": false,
+
+  "editor.guides.bracketPairs": "active",
+
+  "editor.guides.bracketPairsHorizontal": "active",
+
+  "editor.guides.indentation": true,
 
   "editor.renderControlCharacters": false,
 
@@ -384,8 +394,6 @@
 
   "editor.minimap.enabled": false,
 
-  "editor.renderIndentGuides": false,
-
   // Make pressing tab fast for running snippets
   "editor.tabCompletion": "onlySnippets",
 
@@ -403,7 +411,17 @@
     ],
   },
 
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "bounded",
+
+  "editor.cursorStyle": "line",
+
+  "editor.insertSpaces": false,
+
+  "editor.lineNumbers": "on",
+
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+
+  "editor.inlineSuggest.enabled": true,
 
   // The option `"inMarkupAndStylesheetFilesOnly"` applies to html, haml, jade,
   // slim, xml, xsl, css, scss, sass, less and stylus.
@@ -422,6 +440,7 @@
 
   "files.associations": {
     "*.html": "html",
+    ".dockerignore": "ignore"
   },
 
   "files.insertFinalNewline": true,
@@ -443,7 +462,7 @@
     "**/node_modules": true,
     "**/tmp": true,
   },
-  "search.location": "panel",
+
   "search.useReplacePreview": false,
 
   "terminal.integrated.fontFamily": "Source Code Variable, Source Code Pro",
@@ -533,18 +552,18 @@
     },
 
     // Join lines with comments
-    {
-      "before": [
-        "J",
-      ],
-      "after": [],
-      "commands": [
-        {
-          "command": "joinCommentAware.join",
-          "args": [],
-        },
-      ],
-    },
+    // {
+    //   "before": [
+    //     "J",
+    //   ],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "joinCommentAware.join",
+    //       "args": [],
+    //     },
+    //   ],
+    // },
 
     // vim-vinegar
     {
@@ -580,13 +599,9 @@
   */
   "window.title": "${rootName}${separator}${activeEditorLong}",
 
-  "window.zoomLevel": 0,
-
-  "workbench.activityBar.visible": false,
-
   "workbench.colorTheme": "Monokai",
 
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
 
   "workbench.panel.defaultLocation": "right",
 
@@ -627,4 +642,44 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.rulers": [
+      80,
+    ],
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.wordWrap": "bounded",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off",
+    },
+  },
+
+  "redhat.telemetry.enabled": false,
+
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true,
+  },
+
+  "workbench.startupEditor": "none",
+
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
+  },
+
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.activityBar.location": "hidden",
 }
