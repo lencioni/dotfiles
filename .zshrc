@@ -4,11 +4,16 @@
 # Basic configuration
 #
 
+HISTFILE=~/.history
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
+
 setopt appendhistory
 setopt autocd
 setopt beep
 setopt extendedglob
 setopt nonomatch # unmatched patterns are left unchanged
+setopt sharehistory
 
 # Interactive shells
 if [[ $- == *i* ]]; then
