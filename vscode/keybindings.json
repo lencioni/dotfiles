@@ -7,8 +7,8 @@
   // Make breadcrumbs work more like vim-vinegar
   {
     "key": "-",
-    "command": "breadcrumbs.focusPrevious",
-    "when": "breadcrumbsActive && breadcrumbsVisible",
+    "command": "breadcrumbs.toggleToOn",
+    "when": "!config.breadcrumbs.enabled",
   },
 
   // Improve compatibility with GitHub Copilot
