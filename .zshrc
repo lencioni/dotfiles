@@ -29,8 +29,8 @@ CHRUBY=/usr/local/share/chruby
 test -e "$CHRUBY/chruby.sh" && . "$CHRUBY/chruby.sh"
 test -e "$CHRUBY/auto.sh" && . "$CHRUBY/auto.sh"
 
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 
 #
 # Load extra functionality
