@@ -11,6 +11,7 @@ SAVEHIST=$HISTSIZE
 setopt appendhistory
 setopt autocd
 setopt beep
+setopt correct
 setopt extendedglob
 setopt nonomatch # unmatched patterns are left unchanged
 setopt sharehistory
