@@ -23,3 +23,6 @@ export NVM_DIR="$HOME/.nvm"
 if [[ -s "$NVM_DIR/nvm.sh" ]]; then
   source "$NVM_DIR/nvm.sh"
 fi
+
+# Load homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
