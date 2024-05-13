@@ -36,7 +36,7 @@ mkdir -p "$HOME/Library/Application\ Support/Code"
 ln -sFi "$HOME/dotfiles/vscode" "$HOME/Library/Application\ Support/Code/User"
 
 mkdir -p "$HOME/.config"
-ln -sFi "$HOME/dotfiles/karabiner" "$HOME/.config/karabiner"
+ln -sFi "$HOME/dotfiles/karabiner" "$HOME/.config"
 
 # Make sure current user owns their .viminfo file. If they do not, Vim history
 # will not work.
