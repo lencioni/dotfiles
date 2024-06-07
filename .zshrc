@@ -51,3 +51,6 @@ source ~/.zsh/functions
 # Source .zshrc.local if it exists
 test -r ~/.zshrc.local && source ~/.zshrc.local
 
+# Activate mise
+# https://mise.jdx.dev/
+eval "$(~/.local/bin/mise activate zsh)"
