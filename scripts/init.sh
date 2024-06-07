@@ -35,8 +35,8 @@ git submodule update --init --recursive
   ln -sFi .zprezto/runcoms/zshenv .zshenv
 )
 
-mkdir -p "$HOME/Library/Application\ Support/Code"
-ln -sFi "$HOME/dotfiles/vscode" "$HOME/Library/Application\ Support/Code/User"
+mkdir -p "$HOME/Library/Application Support/Code"
+ln -sFi "$HOME/dotfiles/vscode" "$HOME/Library/Application Support/Code/User"
 
 mkdir -p "$HOME/.config"
 ln -sFi "$HOME/dotfiles/karabiner" "$HOME/.config"
